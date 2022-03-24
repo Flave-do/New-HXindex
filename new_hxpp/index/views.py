@@ -39,13 +39,28 @@ class Login(View):
         return render(request,'login.html')
 
     def post(self, request):
-        pass
+        # 获取用户输入的，没有获取到就留空
+        username = request.POST.get('username','')
+        password = request.POST.get('password','')
+
+        # 判断当前用户是否存在，如果不存在则让用户重新注册
+        exists = User.objects.filter(username=username).exists()
+        if not exists:
+            return HttpResponse('该帐号不存在，请重新注册')
+        # 验证，如果通过会返回一个用户对象，如果不通过会返回一个none
+        user = authenticate(username=username,password=password)
+        if user:
+            # 如果有值
+            login(request,user)
+            return redirect(reverse('index'))
+        else:
+            return HttpResponse('密码错误')
 
 
 # 网站首页
 class Index(View):
     def get(self, request):
-        pass
+        return render(request,'index.html')
 
     def post(self, request):
         pass
@@ -54,7 +69,8 @@ class Index(View):
 # 用户注销
 class LogoutUser(View):
     def get(self, request):
-        pass
+        logout(request)
+        return redirect(reverse('register'))
 
     def post(self, request):
         pass
