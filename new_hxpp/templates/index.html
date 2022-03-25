@@ -1,12 +1,873 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="/static/favicon.ico" />
+    <title>安徽省恒信检验检测有限公司</title>
+    <meta name="keywords" content="安徽省恒信检验检测有限公司" />
+    <meta name="Description" content="安徽省恒信检验检测有限公司" />
+    <script type="text/javascript" src="../static/js/Moving_Icon/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tools.js"></script>
+    <link href="../static/css/index.css" rel="stylesheet" type="text/css">
+
+
 </head>
+
 <body>
-    登录成功 进入首页
-    <br>
-    <a href="{% url 'logout' %}">退出登录</a>
+    <!-- 导航 -->
+    <div id="header">
+
+        <div class="top">
+            <div class="time">
+                <script language=JavaScript>
+
+                    var enabled = 0; today = new Date();
+                    var day; var date;
+                    if (today.getDay() == 0) day = " 星期日"
+                    if (today.getDay() == 1) day = " 星期一"
+                    if (today.getDay() == 2) day = " 星期二"
+                    if (today.getDay() == 3) day = " 星期三"
+                    if (today.getDay() == 4) day = " 星期四"
+                    if (today.getDay() == 5) day = " 星期五"
+                    if (today.getDay() == 6) day = " 星期六"
+                    document.fgColor = "000000";
+                    date = "您好!今天是:" + (today.getFullYear()) + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日" + day + "";
+                    document.write(date);
+
+                </script>
+            </div>
+        </div>
+        <div class="search">
+            <div class="logo"><a href='/index'><img src="/static/images/logo.png" /></a></div>
+            <div class="searchbox">
+                <input type="text" class="input1" value="请输入关键字" onFocus="this.value='';"
+                    onBlur="if(this.value==''){this.value='请输入关键字';}" id="title" name="title" />
+                <input type="image" src="/static/images/btn.jpg" class="btn" onclick="checksearch()" />
+                <script type="text/javascript">
+                    function checksearch() {
+                        var obj = document.getElementById("title");
+                        if (obj.value == "") {
+                            alert("	请输入关键字!");
+                            return false;
+                        } else {
+                            window.location.href = '/search.aspx?title=' + obj.value;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <a href="{% url 'logout' %}">退出登录</a>
+        <div class="nav">
+            <ul class="navmenu" id="navmenu">
+                <li><a href='#'>首页</a></li>
+                <li><a href='/about/index_13.aspx'>信息公开</a>
+                    <div class='subNav' style='display:none'>
+                        <ul>
+                            <li><a href="/about/index_13.aspx">本院简介</a></li>
+
+                            <li><a href="/about/index_15.aspx">致辞</a></li>
+
+                            <li><a href="/about/index_16.aspx">机构领导</a></li>
+
+                            <li><a href="/about/index_17.aspx">组织机构</a></li>
+
+                            <li><a href="/about/list_19.aspx">部门简介</a></li>
+
+                            <li><a href="/about/index_21.aspx">工作理念</a></li>
+
+                            <li><a href="/list_196.aspx">预决算公开</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="http://www.fishc.com">新闻中心</a>
+                    <div class='subNav' style='display:none'>
+                        <ul>
+                            <li><a href="/about/index_13.aspx">本院简介</a></li>
+
+                            <li><a href="/about/index_15.aspx">致辞</a></li>
+
+                            <li><a href="/about/index_16.aspx">机构领导</a></li>
+
+                            <li><a href="/about/index_17.aspx">组织机构</a></li>
+
+                            <li><a href="/about/list_19.aspx">部门简介</a></li>
+
+                            <li><a href="/about/index_21.aspx">工作理念</a></li>
+
+                            <li><a href="/list_196.aspx">预决算公开</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="http://bbs.fishc.com/forum.php">资质能力</a>
+                    <div class='subNav' style='display:none'>
+                        <ul>
+
+                            <li><a href="/zznl/index_59.aspx">法定计量机构授权</a></li>
+
+                            <li><a href="/zznl/index_60.aspx">资质认定项目</a></li>
+
+                            <li><a href="/zznl/index_61.aspx">授权或验收项目</a></li>
+
+                            <li><a href="/zznl/index_62.aspx">CNAS认可项目</a></li>
+
+                            <li><a href="/zznl/index_63.aspx">省级科技成果鉴定</a></li>
+
+                            <li><a href="/zznl/index_64.aspx">节能量审核</a></li>
+
+                            <li><a href="/zznl/index_65.aspx">固定资产投资项目评估</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="http://bbs.fishc.com/forum.php">计量服务</a>
+                    <div class='subNav' style='display:none'>
+                        <ul>
+                            <li><a href="/about/index_13.aspx">本院简介</a></li>
+
+                            <li><a href="/about/index_15.aspx">致辞</a></li>
+
+                            <li><a href="/about/index_16.aspx">机构领导</a></li>
+
+                            <li><a href="/about/index_17.aspx">组织机构</a></li>
+
+                            <li><a href="/about/list_19.aspx">部门简介</a></li>
+
+                            <li><a href="/about/index_21.aspx">工作理念</a></li>
+
+                            <li><a href="/list_196.aspx">预决算公开</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="http://bbs.fishc.com/forum.php">普法园地</a>
+                    <div class='subNav' style='display:none'>
+                        <ul>
+                            <li><a href="/about/index_13.aspx">本院简介</a></li>
+
+                            <li><a href="/about/index_15.aspx">致辞</a></li>
+
+                            <li><a href="/about/index_16.aspx">机构领导</a></li>
+
+                            <li><a href="/about/index_17.aspx">组织机构</a></li>
+
+                            <li><a href="/about/list_19.aspx">部门简介</a></li>
+
+                            <li><a href="/about/index_21.aspx">工作理念</a></li>
+
+                            <li><a href="/list_196.aspx">预决算公开</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="http://bbs.fishc.com/forum.php">在线交流</a>
+                    <div class='subNav' style='display:none'>
+                        <ul>
+                            <li><a href="/about/index_13.aspx">本院简介</a></li>
+
+                            <li><a href="/about/index_15.aspx">致辞</a></li>
+
+                            <li><a href="/about/index_16.aspx">机构领导</a></li>
+
+                            <li><a href="/about/index_17.aspx">组织机构</a></li>
+
+                            <li><a href="/about/list_19.aspx">部门简介</a></li>
+
+                            <li><a href="/about/index_21.aspx">工作理念</a></li>
+
+                            <li><a href="/list_196.aspx">预决算公开</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                $(function () {
+                    $(".navmenu>li").mouseover(function () {
+
+                        $(this).children("div").css("display", "block");
+
+                    })
+                })
+                // 关键二：正确使用jQuey的语法完成行为。
+                $(function () {
+
+                    $(".navmenu>li").mouseout(function () {
+
+                        $(this).children("div").css("display", "none");
+                    })
+                })
+            </script>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="left_box">
+            <div class="business_login">
+                <ul>
+                    <li><a href="/login" target="_top"><img src="/static/images/service_platform_login.jpg"
+                                style="width:254px;" /></a></li>
+                </ul>
+            </div>
+            <div class="notice">
+                <div class="title"><a href="http://www.ahhx.com/jlfw/list_67.aspx">&gt;&gt;更多</a>
+                    <h1>通知公告</h1>
+                </div>
+                <div id="colee" style="overflow:hidden;height:280px;">
+                    <div id="colee1">
+                        <ul class="list">
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系统开发相关设备采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="电离辐射和电学计量标准实验室设备设施公开招标公告"
+                                    target="_blank">电离辐射和电学计量标准实验室设备设施公开招标公告</a><br>
+                                2021-11-19
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="焓差试验室一体化装置招标公告" target="_blank">焓差试验室一体化装置招标公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商...</a><br>
+                                2021-11-05
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系统开发相关设备采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="电离辐射和电学计量标准实验室设备设施公开招标公告"
+                                    target="_blank">电离辐射和电学计量标准实验室设备设施公开招标公告</a><br>
+                                2021-11-19
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="焓差试验室一体化装置招标公告" target="_blank">焓差试验室一体化装置招标公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商...</a><br>
+                                2021-11-05
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="colee2">
+                        <ul class="list">
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系统开发相关设备采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="电离辐射和电学计量标准实验室设备设施公开招标公告"
+                                    target="_blank">电离辐射和电学计量标准实验室设备设施公开招标公告</a><br>
+                                2021-11-19
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="焓差试验室一体化装置招标公告" target="_blank">焓差试验室一体化装置招标公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商...</a><br>
+                                2021-11-05
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院测厚激光位移传感器系统采购竞争性磋商...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系统开发相关设备采购竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院动力电池极片涂层均匀性在线计量测试系...</a><br>
+                                2021-11-24
+                            </li>
+
+                            <li>
+                                <a href="#" title="电离辐射和电学计量标准实验室设备设施公开招标公告"
+                                    target="_blank">电离辐射和电学计量标准实验室设备设施公开招标公告</a><br>
+                                2021-11-19
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目（第2包）成交结果公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="焓差试验室一体化装置招标公告" target="_blank">焓差试验室一体化装置招标公告</a><br>
+                                2021-11-17
+                            </li>
+
+                            <li>
+                                <a href="#" title="安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商公告"
+                                    target="_blank">安徽省计量科学研究院宣传视频制作项目第2包（二次）竞争性磋商...</a><br>
+                                2021-11-05
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    var speed = 48;
+                    var colee2 = document.getElementById("colee2");
+                    var colee1 = document.getElementById("colee1");
+                    var colee = document.getElementById("colee");
+                    colee2.innerHTML = colee1.innerHTML; //克隆colee1为colee2
+                    function Marquee1() {
+                        //当滚动至colee1与colee2交界时
+                        if (colee2.offsetTop - colee.scrollTop <= 0) {
+                            colee.scrollTop -= colee1.offsetHeight; //colee跳到最顶端
+                        } else {
+                            colee.scrollTop++
+                        }
+                    }
+                    var MyMar1 = setInterval(Marquee1, speed)//设置定时器
+                    //鼠标移上时清除定时器达到滚动停止的目的
+                    colee.onmouseover = function () { clearInterval(MyMar1) }
+                    //鼠标移开时重设定时器
+                    colee.onmouseout = function () { MyMar1 = setInterval(Marquee1, speed) }
+                </script>
+            </div>
+            <div class="flfg">
+                <div class="title">
+                    <h1>普法园地</h1>
+                    <span><a href="/flfg/list_73.aspx">更多</a></span>
+                </div>
+                <div class="list3">
+
+                    <li><span>2020-06-19</span><a href="/flfg/info_73.aspx?itemid=5975" title="《信访条例》和《安徽省信访条例》（新修订）"
+                            target="_blank">《安徽省信访条例》</a></li>
+
+                    <li><span>2018-09-10</span><a href="/flfg/info_73.aspx?itemid=5380" title="中华人民共和国监察法"
+                            target="_blank">中华人民共和国监察法</a></li>
+
+                    <li><span>2018-09-10</span><a href="/flfg/info_73.aspx?itemid=5377" title="中华人民共和国宪法"
+                            target="_blank">中华人民共和国宪法</a></li>
+
+                    <li><span>2017-08-07</span><a href="/flfg/info_73.aspx?itemid=5039" title="中华人民共和国行政许可法"
+                            target="_blank">中华人民共和国行政许可法</a></li>
+
+                    <li><span>2017-08-07</span><a href="/flfg/info_73.aspx?itemid=5038" title="中华人民共和国行政处罚法"
+                            target="_blank">中华人民共和国行政处罚法</a></li>
+
+                    <li><span>2017-08-07</span><a href="/flfg/info_73.aspx?itemid=5037" title="中华人民共和国行政强制法"
+                            target="_blank">中华人民共和国行政强制法</a></li>
+
+                    <li><span>2017-08-07</span><a href="/flfg/info_73.aspx?itemid=5036" title="中华人民共和国行政复议法"
+                            target="_blank">中华人民共和国行政复议法</a></li>
+
+                    <li><span>2017-08-07</span><a href="/flfg/info_73.aspx?itemid=5035" title="中华人民共和国行政诉讼法"
+                            target="_blank">中华人民共和国行政诉讼法</a></li>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right_box">
+            <div class="khzq">
+                <div class="title_kh">
+                    <h1>客户专区</h1>
+                    <span><span><a href='/jlfw/list_66.aspx'>更多</a></span>
+                </div>
+                <ul class="list_kh">
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=9' onclick="return checkurl('')" title='投诉、申诉制度'
+                            target="_blank">投诉、申诉制度</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=16' onclick="return checkurl('')" title='送检注意事项'
+                            target="_blank">送检注意事项</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=17' onclick="return checkurl('')" title='检测工作期限'
+                            target="_blank">检测工作期限</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=18' onclick="return checkurl('')" title='检测工作流程'
+                            target="_blank">检测工作流程</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=19'
+                            onclick="return checkurl('http://www.ahjly.com/zznl/index_59.aspx')" title='检测能力'
+                            target="_blank">检测能力</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=20' onclick="return checkurl('')" title='服务方式'
+                            target="_blank">服务方式</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=21' onclick="return checkurl('')" title='付款方式'
+                            target="_blank">付款方式</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=22' onclick="return checkurl('')" title='总体目标'
+                            target="_blank">总体目标</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=23' onclick="return checkurl('')" title='服务承诺'
+                            target="_blank">服务承诺</a>
+                    </li>
+
+                    <li>
+                        <a href='/jlfw/info_66.aspx?itemid=24'
+                            onclick="return checkurl('http://wwpt.ahjly.com/cmiims/')" title='服务平台'
+                            target="_blank">服务平台</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="news">
+                <div class="what">
+                    <div class="tp">
+                        <div id="MSClassBox">
+                            <ul id="ContentID">
+
+                                <li><a href='/news/info_29.aspx?itemid=6321'
+                                        title='省计量院组织全体党员收看习近平总书记在庆祝中国共产党成立100周年大会上重要讲话现场直播' target="_blank"><img
+                                            border="0" src="../static/images/news/location.jpg" /></a>
+                                    <div class="comt">省计量院组织全体党员收看习近平总书记在庆...</div>
+                                </li>
+
+                                <li><a href='/news/info_29.aspx?itemid=6320' title='省计量院庆祝建党百年党史知识竞赛成功举办'
+                                        target="_blank"><img border="0" src="../static/images/news/1.jpg" /></a>
+                                    <div class="comt">省计量院庆祝建党百年党史知识竞赛成功举办...</div>
+                                </li>
+
+                                <li><a href='/news/info_29.aspx?itemid=6319' title='省计量院党委组织党员赴新四军七师纪念馆开展主题党日活动'
+                                        target="_blank"><img border="0" src="../static/images/news/2.jpg" /></a>
+                                    <div class="comt">省计量院党委组织党员赴新四军七师纪念馆开...</div>
+                                </li>
+
+                                <li><a href='/news/info_29.aspx?itemid=6219' title='省计量院开展“传承红色基因 秉持初心前行”主题党日活动'
+                                        target="_blank"><img border="0" src="../static/images/news/3.jpg" /></a>
+                                    <div class="comt">省计量院开展“传承红色基因 秉持初心前行”主...</div>
+                                </li>
+
+                                <li><a href='/news/info_29.aspx?itemid=6218' title='省计量院召开党史学习教育动员会暨党的建设、党风廉政建设工作会议'
+                                        target="_blank"><img border="0" src="../static/images/news/4.jpg" /></a>
+                                    <div class="comt">省计量院召开党史学习教育动员会暨党的建设...</div>
+                                </li>
+
+                                <li><a href='/news/info_29.aspx?itemid=6217' title='省计量院召开新一轮深化“三个以案”警示教育动员会'
+                                        target="_blank"><img border="0" src="../static/images/news/5.jpg" /></a>
+                                    <div class="comt">省计量院召开新一轮深化“三个以案”警示教育...</div>
+                                </li>
+
+                                <li><a href='/news/info_29.aspx?itemid=6321'
+                                        title='省计量院组织全体党员收看习近平总书记在庆祝中国共产党成立100周年大会上重要讲话现场直播' target="_blank"><img
+                                            border="0" src="../static/images/news/location.jpg" /></a>
+
+                                    <div class="comt">省计量院组织全体党员收看习近平总书记在庆...</div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <ul id="TabID">
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                        </ul>
+                        <script type="text/javascript">
+                            window.onload = function () {
+                                //获取imgList
+                                var imgList = document.getElementById("ContentID");
+                                //获取页面中所有的img标签
+                                var imgArr = imgList.getElementsByTagName("img");
+                                //设置imgList的宽度
+                                imgList.style.width = 302 * imgArr.length + "px";
+                                // alert(imgArr.length)
+                                // alert(imgList.style.width)
+                                /*设置导航按钮居中*/
+                                //TabID
+                                var TabID = document.getElementById("TabID")
+                                //获取outer
+                                var MSClassBox = document.getElementById("MSClassBox");
+                                //设置navDiv的left值
+                                TabID.style.left = (MSClassBox.offsetWidth - TabID.offsetWidth) / 2 + "px"
+
+                                //默认显示图片的索引
+                                var index = 0;
+
+                                //获取所有的li
+                                var allA = TabID.getElementsByTagName("li");
+                                // alert(allA.length)
+                                //设置默认选中的效果
+                                allA[index].style.backgroundColor = "red";
+
+                                //为所有的超链接都绑定单击响应函数
+                                for (var i = 0; i < allA.length; i++) {
+                                    // 为每一个超链接都添加一个num属性
+                                    allA[i].num = i;
+
+                                    //为超链接绑定单击响应函数
+                                    allA[i].onclick = function () {
+
+                                        //关闭自动切换定时器
+                                        clearInterval(timer);
+
+                                        //获取点击超链接的索引,并将其设置为index
+                                        index = this.num;
+                                        // alert(index)
+                                        //切换图片
+                                        setA(imgList, imgArr, index, allA);
+
+                                        //使用move函数来切换图片
+                                        move(imgList, "left", -302 * index, 10, function () {
+                                            //动画执行完毕,开启自动切换
+                                            autoChange();
+
+                                        });
+
+                                    };
+                                }
+
+                                //创建一个方法用来设置选中的a
+                                function setA() {
+
+                                    //判断当前索引是否是最后一张图片
+                                    if (index >= imgArr.length - 1) {
+                                        //则将index设置为0
+                                        index = 0;
+
+                                        //此时显示的最后一张图片,而最后一张图片和第一张是一摸一样
+                                        //通过CSS将最后一张切换成第一张
+                                        imgList.style.left = 0;
+                                    }
+
+                                    //遍历所有并将它们的背景颜色设置为红色
+                                    for (var i = 0; i < allA.length; i++) {
+                                        allA[i].style.backgroundColor = "";
+                                    }
+                                    //将选中的a设置为黑色
+                                    allA[index].style.backgroundColor = "red";
+                                };
+
+                                //定义一个自动切换的定时器的标识
+                                var timer;
+                                //自动切换图片
+                                autoChange();
+
+                                //创建一个函数，用来开启自动切换图片
+                                function autoChange() {
+                                    //开启一个定时器,用来定时去切换图片
+                                    timer = setInterval(function () {
+                                        //使索引自增
+                                        index++;
+                                        //判断index的值
+                                        index %= imgArr.length;
+
+                                        //执行动画,切换图片
+                                        move(imgList, "left", -302 * index, 10, function () {
+                                            //修改导航按钮
+                                            setA();
+                                        });
+
+                                    }, 3000);
+                                };
+
+                                AdMove("ad107", "close107");
+                            };
+
+                        </script>
+                    </div>
+                </div>
+                <!--动态-->
+                <div class="dongtai">
+                    <div class="title3">
+                        <h1 class="hover" id="one1" onmouseover="setTab('one',1,3)"><a
+                                href='/news/list_25.aspx'>单位新闻</a></h1>
+                        <h1 id="one2" onmouseover="setTab('one',2,3)"><a href='/news/list_27.aspx'>行业动态</a></h1>
+                        <h1 id="one3" onmouseover="setTab('one',3,3)"><a href='/news/list_100.aspx'>文化建设</a></h1>
+                        <h1><a href="http://d.ahwmw.cn/szjggw/ahsjly/" target="_blank">文明大展台</a></h1>
+                    </div>
+                    <div id="con_one_1">
+                        <div class="topnews">
+
+                            <h1><a href='/news/info_25.aspx?itemid=6454' title='省计量院衡器与交通安全所派人赴山东泰安参加国家计量技术规范审定会'
+                                    target="_blank">省计量院衡器与交通安全所派人赴山东泰安参加国家计量...</a></h1>
+                            <p> 2021年12月14日，省计量院衡器与交通所检测人员参加中国计量协会机动车检测技术委员会... <a
+                                    href='/news/info_25.aspx?itemid=6454'>[详细]</a></p>
+
+                        </div>
+                        <ul class="list2">
+
+                            <li><span>2021-12-22</span><a href='/news/info_25.aspx?itemid=6454'
+                                    title='省计量院衡器与交通安全所派人赴山东泰安参加国家计量技术规范审定会' target="_blank">省计量院衡器与交通安全所派人赴山东泰安参...</a>
+                            </li>
+
+                            <li><span>2021-12-22</span><a href='/news/info_25.aspx?itemid=6453'
+                                    title='省计量院成功中标“安徽省高耗能行业能效对标指南研究”项目' target="_blank">省计量院成功中标“安徽省高耗能行业能效对标...</a>
+                            </li>
+
+                            <li><span>2021-12-22</span><a href='/news/info_25.aspx?itemid=6452'
+                                    title='省计量院圆满完成2021年度废水类重点排污单位自动监测设备量值溯源工作'
+                                    target="_blank">省计量院圆满完成2021年度废水类重点排污单...</a></li>
+
+                            <li><span>2021-12-22</span><a href='/news/info_25.aspx?itemid=6451'
+                                    title='省计量院2021年全力保障全省新冠疫情防控工作' target="_blank">省计量院2021年全力保障全省新冠疫情防控工...</a></li>
+
+                            <li><span>2021-12-21</span><a href='/news/info_25.aspx?itemid=6450'
+                                    title='省计量院圆满完成宿州市和铜陵市烟气自动监测设备量值溯源试点工作 ' target="_blank">省计量院圆满完成宿州市和铜陵市烟气自动监...</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="con_one_2" style="display:none">
+                        <div class="topnews">
+
+                            <h1><a href='/news/info_27.aspx?itemid=4910' title='公路专用计量器具计量技术委员会成立'
+                                    target="_blank">公路专用计量器具计量技术委员会成立</a></h1>
+                            <p> 全国公路专用计量器具计量技术委员会日前成立，将负责公路领域内计量技术规范制修订和... <a
+                                    href='/news/info_27.aspx?itemid=4910'>[详细]</a></p>
+
+                        </div>
+                        <ul class="list2">
+
+                            <li><span>2017-02-23</span><a href='/news/info_27.aspx?itemid=4910'
+                                    title='公路专用计量器具计量技术委员会成立' target="_blank">公路专用计量器具计量技术委员会成立</a></li>
+
+                            <li><span>2017-02-23</span><a href='/news/info_27.aspx?itemid=4909'
+                                    title='我国起草的首项振动在线校准国际标准即将发布' target="_blank">我国起草的首项振动在线校准国际标准即将发...</a></li>
+
+                            <li><span>2016-10-26</span><a href='/news/info_27.aspx?itemid=4856'
+                                    title='西安多名环保官员监测数据造假被警方带走' target="_blank">西安多名环保官员监测数据造假被警方带走</a></li>
+
+                            <li><span>2016-10-10</span><a href='/news/info_27.aspx?itemid=4854'
+                                    title='首届“互联网 检验检测认证”研讨会召开' target="_blank">首届“互联网 检验检测认证”研讨会召开</a></li>
+
+                            <li><span>2016-11-25</span><a href='/news/info_27.aspx?itemid=4853'
+                                    title='国家海洋计量站开展计量标准建立、使用和管理培训' target="_blank">国家海洋计量站开展计量标准建立、使用和管理...</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="con_one_3" style="display:none">
+                        <div class="topnews">
+
+                            <h1><a href='/news/info_100.aspx?itemid=4716' title='我院志愿者服务项目入选省直机关“最佳志愿者服务项目”'
+                                    target="_blank">我院志愿者服务项目入选省直机关“最佳志愿者服务项目”...</a></h1>
+                            <p> 2016年2月25日，根据《关于开展省直机关“最佳志愿服务项目、最佳志愿服务组织、最佳志愿者... <a
+                                    href='/news/info_100.aspx?itemid=4716'>[详细]</a></p>
+
+                        </div>
+                        <ul class="list2">
+
+                            <li><span>2016-02-26</span><a href='/news/info_100.aspx?itemid=4716'
+                                    title='我院志愿者服务项目入选省直机关“最佳志愿者服务项目”' target="_blank">我院志愿者服务项目入选省直机关“最佳志愿者...</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div class='hello'>
+                <!--专业部门-->
+                <div class="department">
+                    <div class="title3">
+                        <h1 class="hover" id="two1" onmouseover="setTab('two',1,2)"><a href='#'>专业部门</a></h1>
+                        <h1 id="two2" onmouseover="setTab('two',2,2)"><a href='#'>资质能力</a></h1>
+                    </div>
+                    <div class="con" id="con_two_1">
+
+                        <h2 id="three1" onmouseover="setTab('three',1,5)" class="hover">力学计量技术实验室</h2>
+                        <div class="coninfo" id="con_three_1" style="display:block">
+                            负责力学类检测工作，具体包括质量、力值、声学、振动、粘度、密度等项目，对检测结果和出具的报告、证书质量负责，并做好本部门测量设备的管理和维护保养工作，积极开展力学类检测技术的研究及产品的质量监督检验、委托检验、仲...<a
+                                href="/index_158.aspx">[详细]</a></div>
+                        <h2 id="three2" onmouseover="setTab('three',2,5)">长度计量技术实验室</h2>
+                        <div class="coninfo" id="con_three_2" style="display:none">
+                            负责几何量参数和光学参数方面与量值传递、溯源相关的计量器具检定、校准、检测（包括型式评价）及相关比对工作，对检测结果和出具的报告、证书质量负责；同时做好几何量计量和光学计量专业安徽省最高计量标准的维护、保养工...<a
+                                href="/zybm/index_103.aspx">[详细]</a></div>
+                        <h2 id="three3" onmouseover="setTab('three',3,5)">电学计量技术实验室</h2>
+                        <div class="coninfo" id="con_three_3" style="display:none">
+                            负责电磁类检测工作，对检测结果和出具的报告、证书质量负责，并做好本部门测量设备的管理和维护保养工作，积极开展电磁类检测技术的研究；完成领导交办的工作任务。<a
+                                href="/zybm/index_104.aspx">[详细]</a></div>
+                        <h2 id="three4" onmouseover="setTab('three',4,5)">计量器具强制检定</h2>
+                        <div class="coninfo" id="con_three_4" style="display:none">
+                            负责交通安全类检测工作，同时负责衡器类检测工作。具体包括汽车检测线设备、雷达测速仪等项目，对检测结果和出具的报告、证书质量负责，并做好本部门测量设备的管理和维护保养工作，积极开展交通安全类检测技术的研究；同时...<a
+                                href="/zybm/index_105.aspx">[详细]</a></div>
+                        <h2 id="three5" onmouseover="setTab('three',5,5)">热学计量技术实验室</h2>
+                        <div class="coninfo" id="con_three_5" style="display:none">
+                            热工计量技术研究所建立有安徽省地区的温度、湿度、压力和真空最高社会公用计量标准，热工所设有温湿度，压力，现场检测三个项目组。热工所长期以来一直坚持质量第一、客户至上、持续改进的宗旨，为客户提供准确、可靠的...<a
+                                href="/zybm/index_106.aspx">[详细]</a></div>
+
+                    </div>
+                    <div class="con" id="con_two_2" style="display:none">
+
+                        <h2 id="ten1" onmouseover="setTab('ten',1,5)" class="hover">法定计量机构授权</h2>
+                        <div class="coninfo" id="con_ten_1" style="display:block">&nbsp;
+                            安徽省计量科学研究院经国家质量监督检验检疫总局考核授权，是依法设置的法定计量检定机构。 &nbsp; 附件1:&nbsp;国家法定计量检定机构计量授权证书.pdf
+                            附件2:国家法定计量检定机构计量授权证书附件.pdf 附件3:&nbsp;国质检量函〔2014〕35号 国家型式...<a
+                                href="/zznl/index_59.aspx">[详细]</a></div>
+                        <h2 id="ten2" onmouseover="setTab('ten',2,5)">资质认定项目</h2>
+                        <div class="coninfo" id="con_ten_2" style="display:none">
+                            国家气体流量仪表质量监督检验中心通过中国国家认证认可监督管理委员会的计量认证。安徽省计量器具质量监督检验中心、安徽省汽车产品质量监督检验站、安徽省能源计量和能效测试评价中心通过安徽省质量技术监督局的资质认定。
+                            ...<a href="/zznl/index_60.aspx">[详细]</a></div>
+
+                        <h2 id="ten3" onmouseover="setTab('ten',3,5)">授权或验收项目</h2>
+                        <div class="coninfo" id="con_ten_3" style="display:none">
+                            国家气体流量仪表质量监督检验中心通过中国国家认证认可监督管理委员会的审查认可。依托安徽省计量科学研究院成立的安徽省计量器具质量监督检验中心、安徽省汽车产品质量监督检验站通过安徽省质量技术监督局的验收。
+                            &nbsp; 国...<a href="/zznl/index_61.aspx">[详细]</a></div>
+
+                        <h2 id="ten4" onmouseover="setTab('ten',4,5)">C<br>N<br>A<br>S<br>认可项目</h2>
+                        <div class="coninfo" id="con_ten_4" style="display:none">
+                            安徽省计量科学研究院经中国合格评定国家认可委员会（CNAS）认可，具备相应的检测和校准能力，开展相关工作。 &nbsp; CNAS认可证书（中） CNAS认可证书（英）
+                            附件1:&nbsp;中国合格评定国家认...<a href="/zznl/index_62.aspx">[详细]</a></div>
+
+                        <h2 id="ten5" onmouseover="setTab('ten',5,5)">省级科技成果鉴定</h2>
+                        <div class="coninfo" id="con_ten_5" style="display:none">
+                            经安徽省科技厅认定，可进行6类81项计量器具新产品，7类61项汽车新产品的省级科技成果检测鉴定。<a href="/zznl/index_63.aspx">[详细]</a></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="fnav"><a href='/wzdt/index_118.aspx'>网站地图</a> | <a href='/lxwm/list_45.aspx'>与我们联系</a> | <a
+                target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34011102000934
+
+      "><img src="/static/images/beian_icon.png"> 皖公网安备 xxxxxxxxx号</a> | <a target="_blank"
+                href="http://www.beian.miit.gov.cn/">皖ICP备xxxxxxx号</a>
+
+        </div>
+        <div class="copyright">Copyright 2009 安徽省恒信检验检测有限公司 All Rights Reserved. Designed by <a href="http://www.she.com.cn
+
+
+
+      " target="_blank">xiaoyang</a> 未经许可 不得转载<br />
+            电话:0558-7627628 传真:0558-7627628 邮编:233500 地址:蒙城县庄子大道东纬一路南侧江淮汽车零部件供应巢C10#105 </div>
+    </div>
+
+    <script>
+        /*第一种形式 第二种形式 更换显示样式！*/
+        function setTab(name, cursel, n) {
+            for (i = 1; i <= n; i++) {
+                var menu = document.getElementById(name + i);
+                var con = document.getElementById("con_" + name + "_" + i);
+                menu.className = i == cursel ? "hover" : "";
+                con.style.display = i == cursel ? "block" : "none";
+            }
+        }
+    </script>
+
+    <!-- <script type="text/javascript" src="{{ static('js/common.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/roll.js') }}"></script>
+    <script type="text/javascript" src="{{ static('js/Moving_Icon/jquery.js') }}"></script> -->
+
 </body>
+
 </html>
+<!--底部结束-->
+
+
+
+<!--图片漂浮广告代码开始-->
+
+<DIV id="ad107" style="Z-INDEX: 9999999">
+    <!--漂浮开始-->
+    <A href='http://www.ahjly.com/jlfw/info_67.aspx?itemid=6422' target=_blank>
+        <IMG src="../static/images/201911010958495849.png">
+    </A>
+    <a href="javascript:void(0);" id="close107">关闭</a>
+    <!--漂浮结束-->
+</DIV>
+
+<!--图片漂浮广告代码结束-->
+
+
+
+<!--图片漂浮广告代码结束-->
+
+<!-- 微信代码 开始 -->
+<!-- <div class="weixin">
+    <img src="/cn/images/wx.png" width="40" height="40" />
+    <div class="xixi">
+        <img src="/uploadfiles/" width="150" height="150" />
+    </div>
+</div>-->
+<!-- 微信代码 结束 -->
+<!-- 左侧固定广告 开始 -->
+<div class="left_middle_ad" style="position:fixed;left:0;top: 40%;">
+    <a href="http://www.ahjly.com/jlfw/info_66.aspx?itemid=5098" target="_blank">
+        <img src="../static/images/message/left_block_ad.png" style="width:110px;">
+    </a>
+</div>
+
+<!-- 左侧固定广告 结束 -->
+
+
