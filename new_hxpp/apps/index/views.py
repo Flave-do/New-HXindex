@@ -74,3 +74,12 @@ class LogoutUser(View):
 
     def post(self, request):
         pass
+
+
+class Sureg(View):
+    def get(self, request):
+
+        return render(request,'sureg.html')
+
+    def post(self, request):
+        pass
