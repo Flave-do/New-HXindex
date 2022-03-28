@@ -6,7 +6,7 @@ urlpatterns = [
     path('index/',Index.as_view(),name='index'),
     path('logout/',LogoutUser.as_view(),name='logout'),
     path('sureg/',Sureg.as_view(),name='sureg'),
-    path('index/<pk>/',Info.as_view()),
     path('info/<pk>/',Info.as_view()),
+    path('news/<pk>/',News.as_view()),
 
 ]

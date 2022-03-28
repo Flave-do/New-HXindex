@@ -84,11 +84,22 @@ class Sureg(View):
     def post(self, request):
         pass
 
-class Info(View,):
+
+class Info(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
         print(pk)
         return render(request,"info/info_{}.html".format(pk))
+
+    def psot(self,reuqest):
+        pass
+
+
+class News(View):
+    def get(self,request,pk):
+        # return render(request, 'login.html')
+        print(pk)
+        return render(request,"news/news_{}.html".format(pk))
 
     def psot(self,reuqest):
         pass
