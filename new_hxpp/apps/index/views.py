@@ -103,3 +103,33 @@ class News(View):
 
     def psot(self,reuqest):
         pass
+
+
+class Serve(View):
+    def get(self,request,pk):
+        # return render(request, 'login.html')
+        print(pk)
+        return render(request,"serve/serve_{}.html".format(pk))
+
+    def psot(self,reuqest):
+        pass
+
+
+class Exchange(View):
+    def get(self,request,pk):
+        # return render(request, 'login.html')
+        print(pk)
+        return render(request,"exchange/exchange_{}.html".format(pk))
+
+    def psot(self,reuqest):
+        pass
+
+
+class Ability(View):
+    def get(self,request,pk):
+        # return render(request, 'login.html')
+        print(pk)
+        return render(request,"ability/ability_{}.html".format(pk))
+
+    def psot(self,reuqest):
+        pass
