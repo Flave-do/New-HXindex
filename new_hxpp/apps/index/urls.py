@@ -12,5 +12,6 @@ urlpatterns = [
     path('serve/<pk>/', Serve.as_view()),
     path('exchange/<pk>/', Exchange.as_view()),
     path('ability/<pk>/', Ability.as_view()),
+    path('legal/<pk>/', Legal.as_view()),
 
 ]

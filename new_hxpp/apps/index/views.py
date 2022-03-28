@@ -133,3 +133,13 @@ class Ability(View):
 
     def psot(self,reuqest):
         pass
+
+
+class Legal(View):
+    def get(self,request,pk):
+        # return render(request, 'login.html')
+        print(pk)
+        return render(request,"legal/legal_{}.html".format(pk))
+
+    def psot(self,reuqest):
+        pass
