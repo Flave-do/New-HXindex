@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e44aa1-5d1e-45b0-b035-87012c5dc6ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news/news_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/info/info_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serve/serve_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serve/serve_1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/index/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="167">
@@ -91,11 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="189">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/news/news_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="155" column="18" selection-end-line="207" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -139,20 +147,20 @@
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/templates/sureg.html" />
         <option value="$PROJECT_DIR$/templates/Info/info_1.html" />
+        <option value="$PROJECT_DIR$/apps/index/urls.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/apps/index/views.py" />
+        <option value="$PROJECT_DIR$/templates/ability/ability_1.html" />
+        <option value="$PROJECT_DIR$/templates/news/news_1.html" />
+        <option value="$PROJECT_DIR$/templates/exchange/exchange_1.html" />
+        <option value="$PROJECT_DIR$/templates/serve/serve_1.html" />
+        <option value="$PROJECT_DIR$/templates/info/info_1.html" />
         <option value="$PROJECT_DIR$/templates/info/info_2.html" />
         <option value="$PROJECT_DIR$/templates/info/info_3.html" />
         <option value="$PROJECT_DIR$/templates/info/info_4.html" />
         <option value="$PROJECT_DIR$/templates/info/info_5.html" />
         <option value="$PROJECT_DIR$/templates/info/info_6.html" />
         <option value="$PROJECT_DIR$/templates/info/info_7.html" />
-        <option value="$PROJECT_DIR$/templates/info/info_1.html" />
-        <option value="$PROJECT_DIR$/apps/index/urls.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/apps/index/views.py" />
-        <option value="$PROJECT_DIR$/templates/ability/ability_1.html" />
-        <option value="$PROJECT_DIR$/templates/serve/serve_1.html" />
-        <option value="$PROJECT_DIR$/templates/news/news_1.html" />
-        <option value="$PROJECT_DIR$/templates/exchange/exchange_1.html" />
       </list>
     </option>
   </component>
@@ -202,6 +210,12 @@
               <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="serve" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -221,11 +235,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/serve" />
       <recent name="$PROJECT_DIR$/templates/ability" />
       <recent name="$PROJECT_DIR$/templates/exchange" />
       <recent name="$PROJECT_DIR$/templates/news" />
       <recent name="$PROJECT_DIR$/templates/info" />
-      <recent name="$PROJECT_DIR$/static/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps" />
@@ -288,12 +302,12 @@
       <workItem from="1648191717757" duration="7214000" />
       <workItem from="1648255770887" duration="5834000" />
       <workItem from="1648429951078" duration="6532000" />
-      <workItem from="1648449015093" duration="7626000" />
+      <workItem from="1648449015093" duration="7817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39513000" />
+    <option name="totallyTimeSpent" value="39704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1364" height="563" extended-state="6" />
@@ -430,59 +444,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-346">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -496,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info/info_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5395">
-          <caret selection-end-line="207" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -512,13 +470,6 @@
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#ul#0;n#div#0;n#li#2;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/serve/serve_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -536,17 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/news_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#6;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/ability/ability_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -561,6 +501,76 @@
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/news/news_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="155" column="18" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/serve/serve_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info/info_7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="207" column="7" selection-start-line="207" selection-start-column="7" selection-end-line="207" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
