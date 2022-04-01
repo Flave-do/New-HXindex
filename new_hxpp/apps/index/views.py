@@ -143,3 +143,13 @@ class Legal(View):
 
     def psot(self,reuqest):
         pass
+
+
+# 测试模板继承
+def temp4(request):
+    cotext={
+        'title':"模板继承",
+        'title1': "模板继承",
+        'title2': "模板继承",
+    }
+    return render(request,"serve/temp4.html",context=cotext)
