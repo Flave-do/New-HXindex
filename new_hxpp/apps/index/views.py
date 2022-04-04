@@ -152,4 +152,4 @@ def temp4(request):
         'title1': "模板继承",
         'title2': "模板继承",
     }
-    return render(request,"serve/temp4.html",context=cotext)
+    return render(request,"serve/temp4.html")
