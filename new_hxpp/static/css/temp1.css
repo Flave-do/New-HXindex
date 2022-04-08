@@ -39,8 +39,8 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
     background-size:60px;}
 
 /* 首页导航 */
-.nav{width:1002px; height:54px; margin:0 auto;list-style: none;}
-.nav li{ position:relative;padding:0px 35px; height:54px; line-height:54px; float:left; text-align:center; font-family:"微软雅黑"; font-size:16px; background:url(../images/line.jpg) right center no-repeat;z-index:99;}
+.nav{width:1002px; height:54px; margin:0 auto;}
+.nav li{ position:relative;padding:0px 35px; height:54px; line-height:54px; float:left; text-align:center; font-family:"微软雅黑"; font-size:16px; background:url(../images/line.jpg) right center no-repeat;z-index:99;list-style: none;}
 .nav li a{ display:block; line-height:54px; color:#0352a1;text-decoration:none;}
 .navmenu li a:hover{ color:#000;}
 .nav li.nobg{ background:none;}
@@ -48,7 +48,7 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
 .navmenu .subNav { position:absolute; top:53px; left:0px; width:135px; background:#023A73; display:none; }
 .navmenu .subNav ul { float:none; height:auto; }
 .navmenu .subNav ul li { width:135px; height:36px; line-height:36px; float:left; height:auto; padding:0; background:none; font-family:\5b8b\4f53; font-size:12px; font-weight:100; text-align:center; }
-.navmenu .subNav ul li a { display:block; width:135px; line-height:36px;height:auto; color:#fff; }
+.navmenu .subNav ul li a { display:block; width:135px; line-height:36px;height:auto; color:#fff; margin-left:-40px}
 .navmenu .subNav ul li a:hover { background:#fff; color:#0352a1; }
 
 .mainbox{
