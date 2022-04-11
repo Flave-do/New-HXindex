@@ -62,7 +62,8 @@
                 </script>
             </div>
             <div class="consumer">
-                <a href="{% url 'sureg' %}"><img src="../static/images/16398131642150.png"></a>
+                <a href="{% url 'sureg' %}"><img src="../../static/images/16398131642150.png"></a>
+                <p>欢迎 name</p>
             </div>
         </div>
         <div class="nav">
@@ -210,19 +211,19 @@
         </div>
     </div>
 
-
-    {% block left %}
+    
     <div id="left1">
+        {% block left %}
 
+        {% endblock left %}
     </div>
 
-    {% endblock left %}
 
+    <div id="right1">
+        {% block right %}
 
-    {% block right %}
-
-
-    {% endblock right %}
+        {% endblock right %}
+    </div>
 
 
     <div id="footer">

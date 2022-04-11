@@ -45,7 +45,7 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
 .navmenu li a:hover{ color:#000;}
 .nav li.nobg{ background:none;}
 
-.navmenu .subNav { position:absolute; top:53px; left:0px; width:135px; background:#023A73; display:none; }
+.navmenu .subNav { position:absolute; top:42px; left:0px; width:135px; background:#023A73; display:none; }
 .navmenu .subNav ul { float:none; height:auto; }
 .navmenu .subNav ul li { width:135px; height:36px; line-height:36px; float:left; height:auto; padding:0; background:none; font-family:\5b8b\4f53; font-size:12px; font-weight:100; text-align:center; }
 .navmenu .subNav ul li a { display:block; width:135px; line-height:36px;height:auto; color:#fff; margin-left:-40px}
@@ -59,7 +59,11 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
     background:#FFF;
 }/*2021-12-22*/
 
+/*中部左侧放导航*/
+#left1{float:left;width:300px;height:500px;background:yellow}
 
+/*中部右侧放文本*/
+#right1{float:right;width:1000px;height:500px;background:red}
 
 
 
