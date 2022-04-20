@@ -13,6 +13,7 @@ urlpatterns = [
     path('exchange/<pk>/', Exchange.as_view()),
     path('ability/<pk>/', Ability.as_view()),
     path('legal/<pk>/', Legal.as_view()),
+    # 测试模板继承
     path('temp4/',temp4 ),
 
 ]
