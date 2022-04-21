@@ -209,15 +209,48 @@
     </div>
 
 
-    <div id="left1">
+    <div id="left">
         {% block left %}
+        <div class="left_on">
+            <ul>
+                {% block left_on %}
+                    <li><a href="">XXXX</a></li>
+                    <li><a href="">XXXX</a></li>
+                    <li><a href="">XXXX</a></li>
+                    <li><a href="">XXXX</a></li>
+                {% endblock %}
+            </ul>
+        </div>
+
+        <div class="left_in">
+            <ul>
+                {% block left_dn %}
+                    <li><a href="">XXXX</a></li>
+                    <li><a href="">XXXX</a></li>
+                    <li><a href="">XXXX</a></li>
+                    <li><a href="">XXXX</a></li>
+                {% endblock %}
+            </ul>
+        </div>
 
         {% endblock left %}
     </div>
 
 
-    <div id="right1">
+    <div id="right">
         {% block right %}
+
+            <div class="right_head">
+                {% block right_head %}
+                    <a href="">XXXXX</a>
+                {% endblock %}
+            </div>
+
+            <div class="right_in">
+                {% block right_on %}
+                    <a href="">XXXXX</a>
+                {% endblock %}
+            </div>
 
         {% endblock right %}
     </div>
