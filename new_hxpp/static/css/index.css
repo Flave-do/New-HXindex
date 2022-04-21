@@ -28,15 +28,15 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
     margin:0 auto;
 }
 .logo{ width:400px; height:90px; float:left;margin-left:100px;}
-.searchbox{width:198px;height:28px;background:url(../images/input.jpg) no-repeat;float: left;margin-left:490px;margin-top:38px;}
+.searchbox{width:198px;height:28px;background:url(../images/input.jpg) no-repeat;float: left;margin-left:520px;margin-top:38px;}
 .input1{ width:152px; height:25px; float:left; border:0px; padding-left:10px; background:none; color:#cfcfcf;}.btn{ margin-top:1px;}
 .btn2{ float:left; margin-right:10px;}
-.consumer{width:80px;float: right;margin-right:10px;margin-top:10px}
-.consumer img{
-    width:60px;
-    height:60px;
-    border-radius: 60px;
-    background-size:60px;}
+/*.consumer{width:80px;float: right;margin-right:10px;margin-top:10px}*/
+/*.consumer img{*/
+    /*width:60px;*/
+    /*height:60px;*/
+    /*border-radius: 60px;*/
+    /*background-size:60px;}*/
 
 /* 首页导航 */
 .nav{width:1002px; height:54px; margin:0 auto;list-style: none;}
