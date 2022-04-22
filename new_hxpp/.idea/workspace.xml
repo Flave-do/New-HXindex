@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e44aa1-5d1e-45b0-b035-87012c5dc6ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/temp1.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/temp1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/temp1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/temp1.html" afterDir="false" />
     </list>
@@ -49,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/temp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="267" column="19" lean-forward="true" selection-start-line="267" selection-start-column="19" selection-end-line="267" selection-end-column="19" />
+            <state relative-caret-position="231">
+              <caret line="276" column="32" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+            <state relative-caret-position="137">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -313,18 +314,18 @@
       <workItem from="1650414787278" duration="509000" />
       <workItem from="1650502268306" duration="1876000" />
       <workItem from="1650523190968" duration="5425000" />
-      <workItem from="1650587105185" duration="9048000" />
+      <workItem from="1650587105185" duration="10905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79682000" />
+    <option name="totallyTimeSpent" value="81539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="25" width="1329" height="600" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20156863" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20156863" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -690,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/temp1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="267" column="19" lean-forward="true" selection-start-line="267" selection-start-column="19" selection-end-line="267" selection-end-column="19" />
+        <state relative-caret-position="231">
+          <caret line="276" column="32" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -707,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+        <state relative-caret-position="137">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
