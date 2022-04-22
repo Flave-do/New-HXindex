@@ -212,14 +212,22 @@
     <div id="left">
         {% block left %}
         <div class="left_on">
-            <ul>
-                {% block left_on %}
-                    <li><a href="">XXXX</a></li>
-                    <li><a href="">XXXX</a></li>
-                    <li><a href="">XXXX</a></li>
-                    <li><a href="">XXXX</a></li>
+            <div class="titlei">
+                {% block top %}
+                    <h1 class="top">计量服务</h1>
                 {% endblock %}
-            </ul>
+
+            </div>
+
+            <div class="in">
+                {% block top_in %}
+                    <h1><a class="a_on" href="">XXXX</a></h1>
+                    <h1><a class="a_on" href="">XXXX</a></h1>
+                    <h1><a class="a_on" href="">XXXX</a></h1>
+                    <h1><a class="a_on" href="">XXXX</a></h1>
+                {% endblock %}
+            </div>
+
         </div>
 
         <div class="left_in">
