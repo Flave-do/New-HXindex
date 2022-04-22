@@ -54,9 +54,10 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
     background:#FFF;
 }/*2021-12-22*/
 
-
+.nybanner{ width:1000px; height:144px;margin:0px auto 10px;}
+.nybanner img{margin-top: -12px;}
 /*中部左侧放导航*/
-#left{float:left;margin-left:150px;width:228px; display:block;}
+#left{float:left;margin-left:157px;width:228px; display:block;}
 
 .left_on{ display:block;  margin:0px auto 0px; overflow:hidden; padding-bottom:20px; background:#fff; border:1px solid #e7e7e7; border-top:1px solid #0151a1; }
 .left_on .in{ width:172px; display:block;  margin:20px auto 0px; overflow:hidden; padding-bottom:20px; }
