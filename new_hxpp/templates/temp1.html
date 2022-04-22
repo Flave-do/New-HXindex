@@ -213,14 +213,14 @@
         {% block left %}
         <div class="left_on">
             <div class="titlei">
-                {% block top %}
+                {% block title1_top %}
                     <h1 class="top">计量服务</h1>
                 {% endblock %}
 
             </div>
 
             <div class="in">
-                {% block top_in %}
+                {% block top1_in %}
                     <h1><a class="a_on" href="">XXXX</a></h1>
                     <h1><a class="a_on" href="">XXXX</a></h1>
                     <h1><a class="a_on" href="">XXXX</a></h1>
@@ -231,14 +231,21 @@
         </div>
 
         <div class="left_in">
-            <ul>
-                {% block left_dn %}
-                    <li><a href="">XXXX</a></li>
-                    <li><a href="">XXXX</a></li>
-                    <li><a href="">XXXX</a></li>
-                    <li><a href="">XXXX</a></li>
+            <div class="title">
+                {% block title2_top %}
+                    <h1 class="top">联系我们</h1>
                 {% endblock %}
-            </ul>
+
+            </div>
+
+            <div class="on">
+                {% block top2_in %}
+                    <p style="text-indent:2em;"align="left"><span style="text-indent:2em;"align="left">投诉电话</span></p>
+                    <p style="text-indent:2em;"align="left"><span style="text-indent:2em;"align="left">业务联系电话</span></p>
+                    <p style="text-indent:2em;"align="left"><span style="text-indent:2em;"align="left">力学、几何</span></p>
+                    <p style="text-indent:2em;"align="left"><span style="text-indent:2em;"align="left">理化</span></p>
+                {% endblock %}
+            </div>
         </div>
 
         {% endblock left %}
@@ -250,8 +257,21 @@
 
             <div class="right_head">
                 {% block right_head %}
-                    <a href="">XXXXX</a>
+                    <h1>客户专区</h1>
                 {% endblock %}
+
+                <div class="wz">
+                    {% block wz %}
+                        您现在的位置:
+                        <span>
+                            <a href="">>首页</a>
+                            <a href="">>计量服务</a>
+                            <span>>客户专区</span>
+                        </span>
+                    {% endblock %}
+
+
+                </div>
             </div>
 
             <div class="right_in">
