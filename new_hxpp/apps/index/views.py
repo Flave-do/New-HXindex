@@ -88,7 +88,7 @@ class Sureg(View):
 class Info(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
-        print(pk)
+
         return render(request,"info/info_{}.html".format(pk))
 
     def psot(self,reuqest):
@@ -98,7 +98,7 @@ class Info(View):
 class News(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
-        print(pk)
+
         return render(request,"news/news_{}.html".format(pk))
 
     def psot(self,reuqest):
@@ -108,7 +108,7 @@ class News(View):
 class Serve(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
-        print(pk)
+
         return render(request,"serve/serve_{}.html".format(pk))
 
     def psot(self,reuqest):
@@ -118,8 +118,17 @@ class Serve(View):
 class Exchange(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
-        print(pk)
-        return render(request,"exchange/exchange_{}.html".format(pk))
+        pk = int(pk)
+        if pk ==2:
+            fkauthor = '程宜学'
+            datatime = '[2021/10/15 13:16:34]'
+            motif = '检定收费标准怎么查不到'
+            details = '检定收费标准现在怎么查不到'
+            restore = '您好，相关检测咨询请致电：7627628。'
+            return render(request,"exchange/exchange_{}.html".format(pk),{"fkauthor":fkauthor,"datatime":datatime,"motif":motif,"details":details,"restore":restore})
+
+        else:
+            return render(request,"exchange/exchange_{}.html".format(pk))
 
     def psot(self,reuqest):
         pass
@@ -128,7 +137,6 @@ class Exchange(View):
 class Ability(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
-        print(pk)
         return render(request,"ability/ability_{}.html".format(pk))
 
     def psot(self,reuqest):
@@ -138,7 +146,7 @@ class Ability(View):
 class Legal(View):
     def get(self,request,pk):
         # return render(request, 'login.html')
-        print(pk)
+
         return render(request,"legal/legal_{}.html".format(pk))
 
     def psot(self,reuqest):

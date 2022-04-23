@@ -18,5 +18,16 @@
 {% endblock %}
 
 {% block right_on %}
-    <a href="">意见反馈</a>
+    <div class="yjfk">
+	    <div class="fkauthor"><span class="zuozhe">姓名：{{ fkauthor }}</span><span class="fbtime">{{ datatime }}</span>
+        </div>
+
+        <div class="zhuti">
+            <h2>主题：{{ motif }}</h2>
+            <p>{{ details }}</p>
+        </div>
+
+	    <div class="lyhf"><em>回复：</em>{{ restore }}
+        </div>
+	</div>
 {% endblock %}
