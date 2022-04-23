@@ -218,4 +218,16 @@ function getScrollTop() {
     else if (document.compatMode && document.compatMode != 'BackCompat') { scrollPos = document.documentElement.scrollTop; }
     else if (document.body) { scrollPos = document.body.scrollTop; }
     return scrollPos;
-}  
+}
+
+
+//修改当前的标签属性为突出显示
+function foo(goal,cont) {
+        len1 = goal.length
+        for(var i=0;i<len1;i++){
+            if(goal[i].text == cont[0].text){
+                goal[i].style.cssText = "background:url(../../static/images/shading/mbg.jpg) repeat-x; border:1px solid #dedede;  color:#ff7e00;"
+
+        }
+    }
+}

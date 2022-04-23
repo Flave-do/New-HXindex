@@ -12,6 +12,7 @@
         <script type="text/javascript" src="../../static/js/Moving_Icon/jquery.js"></script>
         <script type="text/javascript" src="../../static/js/tools.js"></script>
         <link href="../../static/css/temp1.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -84,19 +85,13 @@
                 <li><a href="/news/1">新闻中心</a>
                     <div class='subNav' style='display:none'>
                         <ul>
-                            <li><a href="/news/1">本院简介</a></li>
+                            <li><a href="/news/1">单位新闻</a></li>
 
-                            <li><a href="/news/2">致辞</a></li>
+                            <li><a href="/news/2">行业新闻</a></li>
 
-                            <li><a href="/news/3">机构领导</a></li>
+                            <li><a href="/news/3">图片新闻</a></li>
 
-                            <li><a href="/news/4">组织机构</a></li>
-
-                            <li><a href="/news/5">部门简介</a></li>
-
-                            <li><a href="/news/6">工作理念</a></li>
-
-                            <li><a href="/news/7">预决算公开</a></li>
+                            <li><a href="/news/4">文化建设</a></li>
 
                         </ul>
                     </div>
@@ -125,19 +120,11 @@
                 <li><a href="/serve/1">计量服务</a>
                     <div class='subNav' style='display:none'>
                         <ul>
-                            <li><a href="/serve/1">本院简介</a></li>
+                            <li><a href="/serve/1">客户专区</a></li>
 
-                            <li><a href="/serve/2">致辞</a></li>
+                            <li><a href="/serve/2">通知公告</a></li>
 
-                            <li><a href="/serve/3">机构领导</a></li>
-
-                            <li><a href="/serve/4">组织机构</a></li>
-
-                            <li><a href="/serve/5">部门简介</a></li>
-
-                            <li><a href="/serve/6">工作理念</a></li>
-
-                            <li><a href="/serve/7">预决算公开</a></li>
+                            <li><a href="/serve/3">表格下载</a></li>
 
                         </ul>
                     </div>
@@ -145,19 +132,17 @@
                 <li><a href="/legal/1">普法园地</a>
                     <div class='subNav' style='display:none'>
                         <ul>
-                            <li><a href="/legal/1">本院简介</a></li>
+                            <li><a href="/legal/1">计量文化馆</a></li>
 
-                            <li><a href="/legal/2">致辞</a></li>
+                            <li><a href="/legal/2">政策法规</a></li>
 
-                            <li><a href="/legal/3">机构领导</a></li>
+                            <li><a href="/legal/3">计量术语</a></li>
 
-                            <li><a href="/legal/4">组织机构</a></li>
+                            <li><a href="/legal/4">民生计量</a></li>
 
-                            <li><a href="/legal/5">部门简介</a></li>
+                            <li><a href="/legal/5">常见问题</a></li>
 
-                            <li><a href="/legal/6">工作理念</a></li>
-
-                            <li><a href="/legal/7">预决算公开</a></li>
+                            <li><a href="/legal/6">普法专栏</a></li>
 
                         </ul>
                     </div>
@@ -165,19 +150,13 @@
                 <li><a href="/exchange/1">在线交流</a>
                     <div class='subNav' style='display:none'>
                         <ul>
-                            <li><a href="/exchange/1">本院简介</a></li>
+                            <li><a href="/exchange/1">联系电话</a></li>
 
-                            <li><a href="/exchange/1">致辞</a></li>
+                            <li><a href="/exchange/1">意见反馈</a></li>
 
-                            <li><a href="/exchange/1">机构领导</a></li>
+                            <li><a href="/exchange/1">监督举报</a></li>
 
-                            <li><a href="/exchange/1">组织机构</a></li>
-
-                            <li><a href="/exchange/1">部门简介</a></li>
-
-                            <li><a href="/exchange/1">工作理念</a></li>
-
-                            <li><a href="/exchange/1">预决算公开</a></li>
+                            <li><a href="/exchange/1">联系方式</a></li>
 
                         </ul>
                     </div>
@@ -251,7 +230,7 @@
     <div id="right">
             <div class="right_head">
                 {% block right_head %}
-                    <h1>法定计量机构授权</h1>
+                    <h1><a class="b_on" >法定计量授权</a></h1>
                 {% endblock %}
 
                 <div class="wz">
@@ -292,7 +271,15 @@
     </div>
 
 </body>
+        <script type="text/javascript">
 
+            var awher =document.getElementsByClassName('a_on')
+            var aher = document.getElementsByClassName('b_on')
+
+            foo(awher,aher)
+
+
+        </script>
 </html>
 
 
