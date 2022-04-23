@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e44aa1-5d1e-45b0-b035-87012c5dc6ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ability/ability_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ability/ability_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/temp1.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/temp1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/exchange/exchange_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exchange/exchange_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exchange/exchange_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exchange/exchange_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exchange/exchange_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exchange/exchange_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exchange/exchange_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exchange/exchange_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/info/info_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info/info_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/legal/legal_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/legal/legal_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/legal/legal_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/legal/legal_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/legal/legal_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/legal/legal_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/legal/legal_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/legal/legal_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/legal/legal_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/legal/legal_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/legal/legal_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/legal/legal_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news/news_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news/news_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news/news_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news/news_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news/news_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/serve/serve_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serve/serve_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/serve/serve_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serve/serve_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/serve/serve_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serve/serve_3.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,11 +46,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ability/ability_1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
               <caret line="237" column="10" selection-start-line="237" selection-start-column="10" selection-end-line="237" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/exchange/exchange_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+              <folding>
+                <element signature="e#1207#1231#0#HTML" expanded="true" />
+                <element signature="e#1239#1263#0#HTML" expanded="true" />
+                <element signature="e#1271#1277#1#HTML" expanded="true" />
+                <element signature="e#1284#1308#0#HTML" expanded="true" />
+                <element signature="e#1366#1372#0#HTML" expanded="true" />
+                <element signature="e#1380#1407#0#HTML" expanded="true" />
+                <element signature="e#1428#1434#0#HTML" expanded="true" />
+                <element signature="e#1443#1470#0#HTML" expanded="true" />
+                <element signature="e#1484#1601#0#HTML" expanded="true" />
+                <element signature="e#1634#1661#0#HTML" expanded="true" />
+                <element signature="e#1693#1720#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -126,7 +128,6 @@
         <option value="$PROJECT_DIR$/templates/temp1.html" />
         <option value="$PROJECT_DIR$/templates/ability/ability_7.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/css/temp1.css" />
         <option value="$PROJECT_DIR$/static/js/tools.js" />
         <option value="$PROJECT_DIR$/templates/ability/ability_1.html" />
         <option value="$PROJECT_DIR$/templates/legal/legal_2.html" />
@@ -140,7 +141,6 @@
         <option value="$PROJECT_DIR$/templates/ability/ability_4.html" />
         <option value="$PROJECT_DIR$/templates/ability/ability_5.html" />
         <option value="$PROJECT_DIR$/templates/ability/ability_6.html" />
-        <option value="$PROJECT_DIR$/templates/exchange/exchange_1.html" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_2.html" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_3.html" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_4.html" />
@@ -158,6 +158,8 @@
         <option value="$PROJECT_DIR$/templates/serve/serve_1.html" />
         <option value="$PROJECT_DIR$/templates/serve/serve_2.html" />
         <option value="$PROJECT_DIR$/templates/serve/serve_3.html" />
+        <option value="$PROJECT_DIR$/static/css/temp1.css" />
+        <option value="$PROJECT_DIR$/templates/exchange/exchange_1.html" />
       </list>
     </option>
   </component>
@@ -200,13 +202,18 @@
             <path>
               <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ability" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
@@ -338,15 +345,15 @@
       <workItem from="1650502268306" duration="1876000" />
       <workItem from="1650523190968" duration="5425000" />
       <workItem from="1650587105185" duration="19036000" />
-      <workItem from="1650673057632" duration="13584000" />
+      <workItem from="1650673057632" duration="15404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103254000" />
+    <option name="totallyTimeSpent" value="105074000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="25" width="1329" height="600" extended-state="6" />
+    <frame x="35" y="25" width="1329" height="600" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2054902" />
@@ -438,13 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -554,13 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exchange/exchange_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -687,6 +680,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="237" column="10" selection-start-line="237" selection-start-column="10" selection-end-line="237" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exchange/exchange_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+          <folding>
+            <element signature="e#1207#1231#0#HTML" expanded="true" />
+            <element signature="e#1239#1263#0#HTML" expanded="true" />
+            <element signature="e#1271#1277#1#HTML" expanded="true" />
+            <element signature="e#1284#1308#0#HTML" expanded="true" />
+            <element signature="e#1366#1372#0#HTML" expanded="true" />
+            <element signature="e#1380#1407#0#HTML" expanded="true" />
+            <element signature="e#1428#1434#0#HTML" expanded="true" />
+            <element signature="e#1443#1470#0#HTML" expanded="true" />
+            <element signature="e#1484#1601#0#HTML" expanded="true" />
+            <element signature="e#1634#1661#0#HTML" expanded="true" />
+            <element signature="e#1693#1720#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
