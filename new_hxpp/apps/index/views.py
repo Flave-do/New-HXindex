@@ -195,3 +195,22 @@ class UserInfo(View):
         # user.delete()
 
         return render(request,'UserInfo.html')
+
+class User_Data(View):
+    def get(self,request):
+        # user = UserProfile()
+        # user.id = 1
+        # user.username = '正心data'
+        # user.save()
+
+        user = UserProfile.objects.get(id=1)
+        user_profile = UserComment()
+        user_profile.id = 1
+        user_profile.fkauthor = user
+        user_profile.motif = '检定收费标准怎么查不到'
+        user_profile.datatime = '2021-10-15 13:16:34'
+        user_profile.details = '检定收费标准现在怎么查不到'
+        user_profile.restore = '您好，相关检测咨询请致电：7627628。'
+        user_profile.save()
+
+        return HttpResponse('successful')

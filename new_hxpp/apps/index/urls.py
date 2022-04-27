@@ -17,5 +17,6 @@ urlpatterns = [
     path('temp4/',temp4 ),
     # 测试mysql数据库
     path('userinfo/', UserInfo.as_view()),
+    path('userdata/', User_Data.as_view()),
 
 ]
