@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e44aa1-5d1e-45b0-b035-87012c5dc6ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/index/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/migrations/0002_alter_usercomment_motif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/exchange/exchange_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exchange/exchange_2.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ability/ability_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="6399">
               <caret line="237" column="10" selection-start-line="237" selection-start-column="10" selection-end-line="237" selection-end-column="10" />
             </state>
           </provider>
@@ -58,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exchange/exchange_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="783">
               <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
             </state>
           </provider>
@@ -67,8 +71,50 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/index/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+            <state relative-caret-position="31">
+              <caret line="193" column="8" lean-forward="true" selection-start-line="193" selection-start-column="10" selection-end-line="194" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/UserInfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/index/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/index/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.virtualenvs/hx_django/lib/python3.6/site-packages/django/contrib/auth/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="329" column="12" selection-start-line="329" selection-start-column="4" selection-end-line="329" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -76,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+            <state relative-caret-position="2376">
+              <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -89,8 +135,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -105,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/temp4.html" />
-        <option value="$PROJECT_DIR$/templates/serve/temp4.html" />
         <option value="$PROJECT_DIR$/templates/serve/serve_6.html" />
         <option value="$PROJECT_DIR$/templates/serve/serve_7.html" />
         <option value="$PROJECT_DIR$/templates/serve/serve_5.html" />
@@ -118,7 +162,6 @@
         <option value="$PROJECT_DIR$/templates/exchange/exchange_5.html" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_6.html" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_7.html" />
-        <option value="$PROJECT_DIR$/apps/index/urls.py" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/templates/temp1.html" />
         <option value="$PROJECT_DIR$/templates/ability/ability_7.html" />
@@ -155,11 +198,14 @@
         <option value="$PROJECT_DIR$/static/css/temp1.css" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_1.html" />
         <option value="$PROJECT_DIR$/templates/exchange/exchange_2.html" />
+        <option value="$PROJECT_DIR$/apps/index/models.py" />
+        <option value="$PROJECT_DIR$/templates/UserInfo.html" />
+        <option value="$PROJECT_DIR$/apps/index/urls.py" />
         <option value="$PROJECT_DIR$/apps/index/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="36" />
     <option name="width" value="1219" />
     <option name="height" value="501" />
@@ -210,36 +256,6 @@
               <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="legal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_hxpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_hxpp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="serve" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,17 +358,20 @@
       <workItem from="1650523190968" duration="5425000" />
       <workItem from="1650587105185" duration="19036000" />
       <workItem from="1650673057632" duration="17825000" />
+      <workItem from="1650846525218" duration="3884000" />
+      <workItem from="1650937305925" duration="6248000" />
+      <workItem from="1651020544756" duration="5782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107495000" />
+    <option name="totallyTimeSpent" value="123409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="25" width="1329" height="600" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20470588" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21647058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -366,9 +385,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.43956044" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="manage.py@new_hxpp" order="13" weight="0.48131868" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43956044" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32967034" />
+      <window_info anchor="bottom" id="manage.py@new_hxpp" order="13" weight="0.84175825" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3277512" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -381,25 +400,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/index/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/20151021094702472.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/16398131642150.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/news/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/message/left_block_ad.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -429,13 +429,6 @@
     <entry file="file://$PROJECT_DIR$/templates/ability/ability_7.html" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/index/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/temp1.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -658,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/exchange/exchange_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -685,24 +671,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/hx_django/lib/python3.6/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1670">
+          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/hx_django/lib/python3.6/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/ability/ability_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="6399">
           <caret line="237" column="10" selection-start-line="237" selection-start-column="10" selection-end-line="237" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exchange/exchange_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="783">
           <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/temp1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/hx_django/lib/python3.6/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="329" column="12" selection-start-line="329" selection-start-column="4" selection-end-line="329" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/UserInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/index/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/index/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/index/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+        <state relative-caret-position="31">
+          <caret line="193" column="8" lean-forward="true" selection-start-line="193" selection-start-column="10" selection-end-line="194" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

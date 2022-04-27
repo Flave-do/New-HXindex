@@ -15,5 +15,7 @@ urlpatterns = [
     path('legal/<pk>/', Legal.as_view()),
     # 测试模板继承
     path('temp4/',temp4 ),
+    # 测试mysql数据库
+    path('userinfo/', UserInfo.as_view()),
 
 ]

@@ -6,6 +6,9 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 # 登录和登出功能
 from django.contrib.auth import logout,login,authenticate
+# 自定义模型类
+from .models import UserProfile,UserComment
+
 # Create your views here.
 
 # 注册
@@ -161,3 +164,34 @@ def temp4(request):
         'title2': "模板继承",
     }
     return render(request,"temp1.html")
+
+# 测试mysql
+class UserInfo(View):
+    def get(self,request):
+        # 创建数据
+        UserProfile.objects.create(id=1,username='正心')
+
+        # user = UserProfile(username='笑容')
+
+        # user = UserProfile()
+        # user.username = '山河'
+        # user.save()
+
+        # 查询方法
+        # user = UserProfile.objects.get(id=1)
+        # return render(request, 'UserInfo.html',{'name':user.username})
+
+        # Users = UserProfile.objects.all()
+        # print(Users)
+
+        # 有则取无则建
+        # user = UserProfile.objects.get_or_create(username='马克')
+
+        # 更新方法
+        user = UserProfile.objects.filter(id=1).update(username='更新')
+
+        # 删除方法
+        # user = UserProfile.objects.get(id=1)
+        # user.delete()
+
+        return render(request,'UserInfo.html')
