@@ -169,13 +169,13 @@ def temp4(request):
 class UserInfo(View):
     def get(self,request):
         # 创建数据
-        UserProfile.objects.create(id=1,username='正心')
+        # UserProfile.objects.create(username='正心')
 
         # user = UserProfile(username='笑容')
 
-        # user = UserProfile()
-        # user.username = '山河'
-        # user.save()
+        user = UserProfile()
+        user.username = '山河'
+        user.save()
 
         # 查询方法
         # user = UserProfile.objects.get(id=1)
@@ -188,7 +188,7 @@ class UserInfo(View):
         # user = UserProfile.objects.get_or_create(username='马克')
 
         # 更新方法
-        user = UserProfile.objects.filter(id=1).update(username='更新')
+        # user = UserProfile.objects.filter(id=1).update(username='更新')
 
         # 删除方法
         # user = UserProfile.objects.get(id=1)
@@ -196,6 +196,7 @@ class UserInfo(View):
 
         return render(request,'UserInfo.html')
 
+# 测试mysql表关系
 class User_Data(View):
     def get(self,request):
         # user = UserProfile()
@@ -205,7 +206,6 @@ class User_Data(View):
 
         user = UserProfile.objects.get(id=1)
         user_profile = UserComment()
-        user_profile.id = 1
         user_profile.fkauthor = user
         user_profile.motif = '检定收费标准怎么查不到'
         user_profile.datatime = '2021-10-15 13:16:34'
