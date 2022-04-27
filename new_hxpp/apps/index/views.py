@@ -174,7 +174,7 @@ class UserInfo(View):
         # user = UserProfile(username='笑容')
 
         user = UserProfile()
-        user.username = '山河'
+        user.username = '山河2'
         user.save()
 
         # 查询方法
@@ -201,7 +201,7 @@ class User_Data(View):
     def get(self,request):
         # user = UserProfile()
         # user.id = 1
-        # user.username = '正心data'
+        # user.username = '正心'
         # user.save()
 
         user = UserProfile.objects.get(id=1)
