@@ -125,13 +125,8 @@ class Exchange(View):
         pk = int(pk)
         if pk ==2:
             items = UserComment.objects.all()
-            # fkauthor = '程宜学'
-            # datatime = '[2021/10/15 13:16:34]'
-            # motif = '检定收费标准怎么查不到'
-            # details = '检定收费标准现在怎么查不到'
-            # restore = '您好，相关检测咨询请致电：7627628。'
-            # return render(request,"exchange/exchange_{}.html".format(pk),{"fkauthor":fkauthor,"datatime":datatime,"motif":motif,"details":details,"restore":restore})
-            return render(request,"exchange/exchange_{}.html".format(pk),{"items":items})
+
+            return render(request,"exchange/exchange_2.html",{"items":items})
 
         else:
             return render(request,"exchange/exchange_{}.html".format(pk))
@@ -197,7 +192,8 @@ class UserInfo(View):
 
         # 查询方法
         user = UserComment.objects.get(id=2)
-        return render(request, 'UserInfo.html',{'name':user.fkauthor_id,'time':user.datatime,'users':UserComment.objects.all()})
+        items = UserComment.objects.all()
+        return render(request, 'UserInfo.html',{'name':user.fkauthor_id,'time':user.datatime,'users':items})
 
         # Users = UserProfile.objects.all()
         # print(Users)
