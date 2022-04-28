@@ -1,5 +1,6 @@
 from django.shortcuts import render,reverse,redirect
 from django.views.generic import View
+from django.utils import timezone
 # 登录出错给出提示
 from django.http import HttpResponse
 # django自带用户模型下的表
@@ -94,7 +95,7 @@ class Info(View):
 
         return render(request,"info/info_{}.html".format(pk))
 
-    def psot(self,reuqest):
+    def post(self,reuqest):
         pass
 
 
@@ -104,7 +105,7 @@ class News(View):
 
         return render(request,"news/news_{}.html".format(pk))
 
-    def psot(self,reuqest):
+    def post(self,reuqest):
         pass
 
 
@@ -114,7 +115,7 @@ class Serve(View):
 
         return render(request,"serve/serve_{}.html".format(pk))
 
-    def psot(self,reuqest):
+    def post(self,reuqest):
         pass
 
 
@@ -133,8 +134,22 @@ class Exchange(View):
         else:
             return render(request,"exchange/exchange_{}.html".format(pk))
 
-    def psot(self,reuqest):
-        pass
+
+    def post(self,request):
+        fkauthor = request.POST.get('fkauthor','')
+        datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
+        motif = request.POST.get('motif','')
+        details = request.POST.get('details','')
+        restore = request.POST.get('restore','')
+        if (fkauthor|datatime|motif|details|restore):
+            user = UserProfile.objects.get(username=fkauthor)
+            user_profile = UserComment()
+            user_profile.fkauthor = user
+            user_profile.motif = motif
+            user_profile.datatime = datatime
+            user_profile.details = details
+            user_profile.restore = restore
+            user_profile.save()
 
 
 class Ability(View):
@@ -142,7 +157,7 @@ class Ability(View):
         # return render(request, 'login.html')
         return render(request,"ability/ability_{}.html".format(pk))
 
-    def psot(self,reuqest):
+    def post(self,reuqest):
         pass
 
 
@@ -152,7 +167,7 @@ class Legal(View):
 
         return render(request,"legal/legal_{}.html".format(pk))
 
-    def psot(self,reuqest):
+    def post(self,reuqest):
         pass
 
 
@@ -172,9 +187,10 @@ class UserInfo(View):
         # UserProfile.objects.create(username='正心')
 
         # user = UserProfile(username='笑容')
+        # print(timezone.now().strftime("%Y-%m-%d %H:%M:%S"))
 
         user = UserProfile()
-        user.username = '山河2'
+        user.username = '山河6'
         user.save()
 
         # 查询方法
@@ -208,7 +224,7 @@ class User_Data(View):
         user_profile = UserComment()
         user_profile.fkauthor = user
         user_profile.motif = '检定收费标准怎么查不到'
-        user_profile.datatime = '2021-10-15 13:16:34'
+        user_profile.datatime = '2022-04-28 08:30:14.543186'
         user_profile.details = '检定收费标准现在怎么查不到'
         user_profile.restore = '您好，相关检测咨询请致电：7627628。'
         user_profile.save()
