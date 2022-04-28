@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-<body onLoad="goPage(1,2);">
+<body onLoad="goPage(1,3);">
 {% endblock %}
 
 {% block left_top %}
@@ -44,7 +44,10 @@
         <tr><td><div id="barcon" name="barcon"></div></td></tr>
     </table>
 
-    <div class="tab">
+{% endblock %}
+
+{% block right_form %}
+        <div class="tab">
 		<div class="tabt"><h2>发表留言</h2><span>带 <em>*</em> 为必填项</span></div>
 				<form id="whir_17" res="whirform">
 		<table class="ke-zeroborder" cellspacing="0" cellpadding="0" width="90%" align="center" border="0">
@@ -119,8 +122,6 @@
 		 }
 	</script>
 			  </div>
-
 {% endblock %}
-
 
 
