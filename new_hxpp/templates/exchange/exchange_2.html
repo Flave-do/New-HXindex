@@ -1,5 +1,9 @@
 {% extends 'exchange/exchange_1.html' %}
 
+{% block head %}
+    <link href="../../static/css/yhfk.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block body %}
 <body onLoad="goPage(1,2);">
 {% endblock %}
@@ -24,21 +28,97 @@
 {% block right_on %}
     {% for k in items %}
         <div class="yjfk">
-	    <div class="fkauthor"><span class="zuozhe">姓名：{{ k.fkauthor.username }}</span><span class="fbtime">{{ k.datatime }}</span>
-        </div>
+            <div class="fkauthor"><span class="zuozhe">姓名：{{ k.fkauthor.username }}</span><span class="fbtime">{{ k.datatime }}</span>
+            </div>
 
-        <div class="zhuti">
-            <h2>主题：{{ k.motif }}</h2>
-            <p>{{ k.details }}</p>
-        </div>
+            <div class="zhuti">
+                <h2>主题：{{ k.motif }}</h2>
+                <p>{{ k.details }}</p>
+            </div>
 
-	    <div class="lyhf"><em>回复：</em>{{ k.restore }}
+            <div class="lyhf"><em>回复：</em>{{ k.restore }}
+            </div>
         </div>
-    </div>
     {% endfor %}
     <table width="60%" align="right">
         <tr><td><div id="barcon" name="barcon"></div></td></tr>
     </table>
+
+    <div class="tab">
+		<div class="tabt"><h2>发表留言</h2><span>带 <em>*</em> 为必填项</span></div>
+				<form id="whir_17" res="whirform">
+		<table class="ke-zeroborder" cellspacing="0" cellpadding="0" width="90%" align="center" border="0">
+			<tbody>
+				<tr>
+					<td height="39" align="right">
+						&nbsp;&nbsp;&nbsp;&nbsp;姓名：&nbsp;
+					</td>
+					<td>
+						<input id="17862" class="input_ly" maxlength="512" name="17862"> <span class="f_red">*</span><span errmsg="姓名验证不通过" regexp="" requiredmsg="姓名为必填" required="True" validatorfor="17862" name="whirValidator"></span>
+					</td>
+				</tr>
+				<tr>
+					<td height="39" align="right">
+						来自哪里:&nbsp;
+					</td>
+					<td>
+						<input id="18156" class="input_ly" maxlength="250" name="18156"> <span errmsg="来自哪里验证不通过" regexp="" requiredmsg="来自哪里为必填" required="False" validatorfor="18156" name="whirValidator"></span>
+					</td>
+				</tr>
+				<tr>
+					<td height="39" align="right">
+						&nbsp;&nbsp;E_mail：&nbsp;
+					</td>
+					<td>
+						<input id="17864" class="input_ly" maxlength="250" name="17864"> <span errmsg="电子邮箱验证不通过" regexp="^\w+([-+.]\w+)*@\w+([-.]\\w+)*\.\w+([-.]\w+)*$" requiredmsg="电子邮箱为必填" required="False" validatorfor="17864" name="whirValidator"></span>
+					</td>
+				</tr>
+				<tr>
+					<td height="39" align="right">
+						&nbsp;&nbsp;&nbsp;&nbsp;主题：&nbsp;
+					</td>
+					<td>
+						<input id="17866" class="input_ly" maxlength="250" name="17866"> <span class="f_red">*</span><span errmsg="主题验证不通过" regexp="" requiredmsg="主题为必填" required="True" validatorfor="17866" name="whirValidator"></span>
+					</td>
+				</tr>
+				<tr>
+					<td height="39" align="right">
+						留言内容：
+					</td>
+					<td>
+						<textarea onkeyup="LimitMaxLength(this)" onblur="LimitMaxLength(this)" id="17867" class="input_ly" style="border-top:#d7d7d7 1px solid;height:199px;border-right:#d7d7d7 1px solid;border-bottom:#d7d7d7 1px solid;border-left:#d7d7d7 1px solid;width:404px;" maxlength="1024" name="17867" onpropertychange="LimitMaxLength(this)"></textarea> <span errmsg="留言内容验证不通过" regexp="" requiredmsg="留言内容为必填" required="True" validatorfor="17867" name="whirValidator"></span>
+					</td>
+				</tr>
+				<tr>
+					<td height="39" align="right">
+						验证码：
+					</td>
+					<td>
+						<input id="17_code" class="input_ly3" maxlength="4" name="17_code" onfocus="this.value=''"> <img class="imgcode" style="cursor:pointer;" align="absMiddle" src="checkcode.ashx" width="60" height="28" onclick="this.src=this.src+'?'"><span errmsg="验证码不是数字" regexp="\d{4}" requiredmsg="验证码必填并为4位数字" required="True" validatorfor="17_code" name="whirValidator"></span><span class="form_er">*</span>
+					</td>
+				</tr>
+				<tr>
+					<td height="39">
+						&nbsp;
+					</td>
+					<td>
+						<input class="btn3" type="button" value=" " onclick="whir.form.submit('whir_17','91','0','17')"> <input class="btn4" type="button" value=" " onclick="whir.form.reset('whir_17')">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<script type="text/javascript">
+		//限制textArea的长度
+		function LimitMaxLength(obj){
+			 var leng= obj.value.length;
+			 var len=parseInt($(obj).attr('maxlength'));
+			 if(leng>len){
+				 obj.value=obj.value.substr(0,len);
+			 }
+		 }
+	</script>
+			  </div>
 
 {% endblock %}
 

@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
+        {% block head %}{% endblock %}
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="icon" href="../../static/js/favicon.ico" />
@@ -274,12 +275,10 @@
 
 </body>
         <script type="text/javascript">
-
             var awher =document.getElementsByClassName('a_on')
             var aher = document.getElementsByClassName('b_on')
 
             foo(awher,aher)
-
 
         </script>
 </html>

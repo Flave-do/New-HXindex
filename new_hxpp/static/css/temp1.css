@@ -57,7 +57,7 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
 .nybanner{ width:1000px; height:144px;margin:0px auto 10px;}
 .nybanner img{margin-top: -12px;}
 /*中部左侧放导航*/
-#left{float:left;margin-left:157px;width:228px; display:block;}
+#left{float:left;margin-left:157px;width:228px; display:block;margin-bottom: 20px;}
 
 .left_on{ display:block;  margin:0px auto 0px; overflow:hidden; padding-bottom:20px; background:#fff; border:1px solid #e7e7e7; border-top:1px solid #0151a1; }
 .left_on .in{ width:172px; display:block;  margin:20px auto 0px; overflow:hidden; padding-bottom:20px; }
@@ -74,7 +74,7 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
 .left_in .on{ width:208px; line-height:25px; text-align:left; padding:10px; color:#565656;}
 
 /*中部右侧放文本*/
-#right{float:left;width:760px;height:500px;margin-left:10px;}
+#right{float:left;width:760px;height:auto;margin-left:10px;}
 
 .right_head{height:35px; line-height:35px; background:url(../images/t1.jpg) repeat-x; font-family:"微软雅黑";}
 .right_head div{margin:0;padding:0;}
@@ -84,7 +84,7 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
 .right_head .wz{ height:19px; line-height:19px; display:block; overflow:hidden; float:right; color:#949494; padding-right:15px; margin-top:8px;}
 .right_head .wz span{ color:#949494;}
 
-.right_in{float:left;background:ivory;width:760px;height: 500px}
+.right_in{float:left;background:ivory;width:760px;height: auto}
 
 .connews{line-height:26px; font-size:14px; padding:30px 30px 25px 30px; color:#555555;}
 .connews p{ text-indent:2em;}
