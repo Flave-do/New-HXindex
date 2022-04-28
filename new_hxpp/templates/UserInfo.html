@@ -10,8 +10,9 @@
 {{ time }}
 <br>
 {{ users }}
+————————————————
 {% for k in users %}
-    {{ k.username }}
+    {{ k.fkauthor.username }}
 {% endfor %}
 </body>
 </html>
