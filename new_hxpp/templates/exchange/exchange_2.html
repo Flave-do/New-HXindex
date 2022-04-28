@@ -20,18 +20,18 @@
 {% block right_on %}
     <div class="yjfk">
 
-    {% for k in items %}
-	    <div class="fkauthor"><span class="zuozhe">姓名：{{ k.fkauthor.username }}</span><span class="fbtime">{{ items.datatime }}</span>
+
+	    <div class="fkauthor"><span class="zuozhe">姓名：{{ items.0.fkauthor.username }}</span><span class="fbtime">{{ items.0.datatime }}</span>
         </div>
 
         <div class="zhuti">
-            <h2>主题：{{ k.motif }}</h2>
-            <p>{{ k.details }}</p>
+            <h2>主题：{{ items.0.motif }}</h2>
+            <p>{{ items.details }}</p>
         </div>
 
-	    <div class="lyhf"><em>回复：</em>{{ k.restore }}
+	    <div class="lyhf"><em>回复：</em>{{ items.0.restore }}
         </div>
-    {% endfor %}
+
 
 	</div>
 {% endblock %}
