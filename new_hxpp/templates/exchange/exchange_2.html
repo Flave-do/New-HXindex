@@ -1,5 +1,9 @@
 {% extends 'exchange/exchange_1.html' %}
 
+{% block body %}
+<body onLoad="goPage(1,2);">
+{% endblock %}
+
 {% block left_top %}
    <h1 class="top">在线交流</h1>
 {% endblock %}
@@ -18,20 +22,25 @@
 {% endblock %}
 
 {% block right_on %}
-    <div class="yjfk">
-
-
-	    <div class="fkauthor"><span class="zuozhe">姓名：{{ items.0.fkauthor.username }}</span><span class="fbtime">{{ items.0.datatime }}</span>
+    {% for k in items %}
+        <div class="yjfk">
+	    <div class="fkauthor"><span class="zuozhe">姓名：{{ k.fkauthor.username }}</span><span class="fbtime">{{ k.datatime }}</span>
         </div>
 
         <div class="zhuti">
-            <h2>主题：{{ items.0.motif }}</h2>
-            <p>{{ items.details }}</p>
+            <h2>主题：{{ k.motif }}</h2>
+            <p>{{ k.details }}</p>
         </div>
 
-	    <div class="lyhf"><em>回复：</em>{{ items.0.restore }}
+	    <div class="lyhf"><em>回复：</em>{{ k.restore }}
         </div>
+    </div>
+    {% endfor %}
+    <table width="60%" align="right">
+        <tr><td><div id="barcon" name="barcon"></div></td></tr>
+    </table>
 
-
-	</div>
 {% endblock %}
+
+
+
