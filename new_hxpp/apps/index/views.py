@@ -189,13 +189,13 @@ class UserInfo(View):
         # user = UserProfile(username='笑容')
         # print(timezone.now().strftime("%Y-%m-%d %H:%M:%S"))
 
-        user = UserProfile()
-        user.username = '山河6'
-        user.save()
+        # user = UserProfile()
+        # user.username = '山河6'
+        # user.save()
 
         # 查询方法
-        # user = UserProfile.objects.get(id=1)
-        # return render(request, 'UserInfo.html',{'name':user.username})
+        user = UserComment.objects.get(id=3)
+        return render(request, 'UserInfo.html',{'name':user.fkauthor_id,'time':user.datatime,'users':UserProfile.objects.all()})
 
         # Users = UserProfile.objects.all()
         # print(Users)

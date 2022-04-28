@@ -5,6 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-
+{{ name }}
+<br>
+{{ time }}
+<br>
+{{ users }}
+{% for k in users %}
+    {{ k.username }}
+{% endfor %}
 </body>
 </html>
