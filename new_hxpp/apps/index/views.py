@@ -124,7 +124,7 @@ class Exchange(View):
         # return render(request, 'login.html')
         pk = int(pk)
         if pk ==2:
-            items = UserComment.objects.all()
+            items = FormTexi.objects.all()
 
             return render(request,"exchange/exchange_2.html",{"items":items})
 

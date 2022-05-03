@@ -28,7 +28,9 @@
 {% block right_on %}
     {% for k in items %}
         <div class="yjfk">
-            <div class="fkauthor"><span class="zuozhe">姓名：{{ k.fkauthor.username }}</span><span class="fbtime">{{ k.datatime }}</span>
+            <div class="fkauthor">
+                <span class="zuozhe">姓名：{{ k.fkauthor.username }}</span>
+                <span class="fbtime">[{{ k.datatimes }}]</span>
             </div>
 
             <div class="zhuti">

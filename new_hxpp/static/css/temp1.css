@@ -84,7 +84,17 @@ body{margin: auto;font-size:12px;color:#333; background:#fff; font-family:Tahoma
 .right_head .wz{ height:19px; line-height:19px; display:block; overflow:hidden; float:right; color:#949494; padding-right:15px; margin-top:8px;}
 .right_head .wz span{ color:#949494;}
 
-.right_in{float:left;background:ivory;width:760px;height: auto;margin-bottom: 20px;}
+.right_in{float:left;background: white;width:760px;height: auto;margin-bottom: 20px;}
+.yjfk{ width:731px; display:block; overflow:hidden; margin:0px auto 20px;}
+.fkauthor{ height:35px; line-height:35px; background:#f2f2f2; line-height:35px; border-top:2px solid #76a6c7; border-bottom:1px solid #eaeaea; margin-top:20px;}
+.fkauthor span.zuozhe{ font-size:14px; color:#666666; padding-left:14px; padding-right:12px;}
+.fkauthor span.fbtime{ font-size:12px; color:#a1a1a1;}
+.zhuti{ padding:12px; }
+.zhuti h2{line-height:30px; font-size:15px; font-style:normal;color:#666666; font-family:"微软雅黑";}
+.yjfk p{ font-size:13px; color:#666666; font-family:"微软雅黑"; line-height:20px; margin:0px; text-indent:2em; line-height:20px;}
+.lyhf{ width:707px; padding:0px 12px; background:#f2f2f2; display:block; overflow:hidden; font-size:13px; color:#666; line-height:30px; font-family:"微软雅黑"; }
+.lyhf em{ color:#ca2716;font-style:normal;}
+
 
 .connews{line-height:26px; font-size:14px; padding:30px 30px 25px 30px; color:#555555;}
 .connews p{ text-indent:2em;}
