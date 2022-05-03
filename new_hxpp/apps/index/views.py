@@ -146,19 +146,19 @@ class ExchangeForm(View):
         fkwhere = request.POST.get('fkwhere','')
         fkdetails = request.POST.get('fkdetails','')
         fkemail = request.POST.get('fkemail','')
+        print(datatime,fkauthor,fkmotif,fkwhere,fkdetails,fkemail)
 
         if (fkauthor and datatime and fkmotif and fkemail and fkwhere and fkdetails):
-            # 有则取无则建
-            user = UserProfile.objects.get_or_create(username=fkauthor)
-
-            user_profile = FormTexi()
-            user_profile.datatime = datatime
-            user_profile.fkauthor = user
-            user_profile.fkwhere = fkwhere
-            user_profile.fkemail = fkemail
-            user_profile.fkmotif = fkmotif
-            user_profile.fkdetails = fkdetails
-            user_profile.save()
+            # 有则取无则建get_or_create会返回一个tuple,第一个值是查到或者创建的数据，第二个值是一个布尔
+            user = UserProfile.objects.get_or_create(username=fkauthor)[0]
+            user_formfile = FormTexi()
+            user_formfile.datatimes = datatime
+            user_formfile.fkauthor = user
+            user_formfile.fkwhere = fkwhere
+            user_formfile.fkemail = fkemail
+            user_formfile.fkmotif = fkmotif
+            user_formfile.fkdetails = fkdetails
+            user_formfile.save()
 
         items = FormTexi.objects.all()
 
