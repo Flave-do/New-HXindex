@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 # 登录和登出功能
 from django.contrib.auth import logout,login,authenticate
 # 自定义模型类
-from .models import UserProfile,UserComment
+from .models import UserProfile,UserComment,FormTexi
 
 # Create your views here.
 
@@ -131,22 +131,38 @@ class Exchange(View):
         else:
             return render(request,"exchange/exchange_{}.html".format(pk))
 
+    def post(self,reuqest):
+        pass
+
+
+class ExchangeForm(View):
+    def get(self,request):
+        pass
 
     def post(self,request):
-        fkauthor = request.POST.get('fkauthor','')
         datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
-        motif = request.POST.get('motif','')
-        details = request.POST.get('details','')
-        restore = request.POST.get('restore','')
-        if (fkauthor|datatime|motif|details|restore):
-            user = UserProfile.objects.get(username=fkauthor)
-            user_profile = UserComment()
-            user_profile.fkauthor = user
-            user_profile.motif = motif
+        fkauthor = request.POST.get('fkauthor', '')
+        fkmotif = request.POST.get('fkmotif','')
+        fkwhere = request.POST.get('fkwhere','')
+        fkdetails = request.POST.get('fkdetails','')
+        fkemail = request.POST.get('fkemail','')
+
+        if (fkauthor and datatime and fkmotif and fkemail and fkwhere and fkdetails):
+            # 有则取无则建
+            user = UserProfile.objects.get_or_create(username=fkauthor)
+
+            user_profile = FormTexi()
             user_profile.datatime = datatime
-            user_profile.details = details
-            user_profile.restore = restore
+            user_profile.fkauthor = user
+            user_profile.fkwhere = fkwhere
+            user_profile.fkemail = fkemail
+            user_profile.fkmotif = fkmotif
+            user_profile.fkdetails = fkdetails
             user_profile.save()
+
+        items = FormTexi.objects.all()
+
+        return render(request, "exchange/exchange_2.html", {"items": items})
 
 
 class Ability(View):
@@ -222,9 +238,24 @@ class User_Data(View):
         user_profile = UserComment()
         user_profile.fkauthor = user
         user_profile.motif = '检定收费标准怎么查不到'
-        user_profile.datatime = '2022-04-28 08:30:14.543186'
+        user_profile.datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
         user_profile.details = '检定收费标准现在怎么查不到'
         user_profile.restore = '您好，相关检测咨询请致电：7627628。'
         user_profile.save()
 
         return HttpResponse('successful')
+
+# 测试form表单
+class OneForm(View):
+    def get(self,request):
+        return render(request,'temp2.html')
+
+    def post(self,request):
+        fkauthor = request.POST.get('fkauthor', '')
+        datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
+        motif = request.POST.get('motif', '')
+        details = request.POST.get('details', '')
+        restore = request.POST.get('restore', '')
+        print(fkauthor,datatime,motif,details,restore)
+
+        return HttpResponse('fkauthor')

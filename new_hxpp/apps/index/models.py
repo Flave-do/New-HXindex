@@ -12,11 +12,7 @@ class UserProfile(models.Model):
 
 class UserComment(models.Model):
     id = models.AutoField(primary_key=True)
-    fkauthor = models.ForeignKey(to='userprofile',to_field='username', on_delete=models.CASCADE)
-    datatime = models.DateTimeField(verbose_name='时间')
-    motif = models.TextField(verbose_name='标题')
-    details = models.TextField(verbose_name='内容')
-    restore = models.TextField(verbose_name='客服')
+    restore = models.TextField(to='formtexi',to_field='id',verbose_name='客服回复')
 
     # 联合索引
     class Meta:
@@ -24,3 +20,13 @@ class UserComment(models.Model):
         unique_together = ['fkauthor','id']
         # # 普通联合索引
         # index_together = ['','']
+
+
+class FormTexi(models.Model):
+    id = models.AutoField(primary_key=True)
+    datatimes = models.DateTimeField(verbose_name='时间')
+    fkauthor = models.CharField(to='userprofile',to_field='username',max_length=20, blank=False)
+    fkwhere = models.CharField(max_length=20, blank=False)
+    fkemail = models.EmailField(verbose_name='邮箱')
+    fkmotif = models.TextField(verbose_name='标题')
+    fkdetails = models.TextField(verbose_name='内容')
