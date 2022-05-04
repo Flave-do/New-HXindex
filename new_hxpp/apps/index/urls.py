@@ -21,5 +21,6 @@ urlpatterns = [
     path('userdata/', User_Data.as_view()),
     # 测试form表单
     path('temp2/',Exchange.as_view(),name='temp5' ),
+    path('temp3/',Register.as_view(),name='register' )
 
 ]

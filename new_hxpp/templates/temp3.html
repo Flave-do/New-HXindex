@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+{#    {{ form.fkwhere.label }}{{ form.fkwhere }}#}
+{#    {{ form.fkauthor.label }}{{ form.fkauthor }}#}
+    {{ form }}
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>

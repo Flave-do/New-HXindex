@@ -7,6 +7,8 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 # 登录和登出功能
 from django.contrib.auth import logout,login,authenticate
+# forms表单
+from .forms import FkAuth
 # 自定义模型类
 from .models import UserProfile,UserComment,FormTexi
 
@@ -259,3 +261,18 @@ class OneForm(View):
         print(fkauthor,datatime,motif,details,restore)
 
         return HttpResponse('fkauthor')
+
+# form表单测试
+class Register(View):
+
+    def get(self,request):
+        form = FkAuth()
+        return render(request,'temp3.html',{'form':form})
+
+    def post(self,request):
+        form = FkAuth(request.POST)
+        if form.is_valid():
+            fkauthor = form.cleaned_data.get('fkauthor','')
+            fkwhere = form.cleaned_data.get('fkwhere','')
+            return HttpResponse("fkauthor is {},fkwhere is {}".format(fkauthor,fkwhere))
+        return HttpResponse("NO")
