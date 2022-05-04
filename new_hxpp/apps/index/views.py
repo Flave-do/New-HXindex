@@ -275,4 +275,5 @@ class Register(View):
             fkauthor = form.cleaned_data.get('fkauthor','')
             fkwhere = form.cleaned_data.get('fkwhere','')
             return HttpResponse("fkauthor is {},fkwhere is {}".format(fkauthor,fkwhere))
-        return HttpResponse("NO")
+        else:
+            return HttpResponse("NO")
