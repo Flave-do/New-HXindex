@@ -17,20 +17,22 @@ class FkAuth(forms.Form):
     # fields.CharField(initial='python')　　#设置填充表单的默认值
     # ChoiceField字段只能返回字符
     # TypedChoiceField  -- 带有类型转换功能的下拉框
+
+    # fields.CharField(required=False)　　#表单可以为空
     fkauthor = fields.CharField(
         max_length=10,
         label='作者',
     )
-    # fields.CharField(required=False)　　#表单可以为空
+
     fkwhere = fields.CharField(
         max_length=20,
         label='来自哪',
     )
 
     # fields.CharField(error_messages={'required': '不能为空', 'invalid': '格式错误'})　 #自定义错误信息
-    fkemail = fields.EmailField(
-        label='邮箱',
-    )
+    # fkemail = fields.EmailField(
+    #     label='邮箱',
+    # )
 
     fkmotif = fields.CharField(
         label='标题',
@@ -41,7 +43,31 @@ class FkAuth(forms.Form):
 
     )
 
-# 二次验证函数的名字是固定写法，以clear_开头，后面跟上字段的变量名
+
+    def clean(self):
+        fkauthor = self.cleaned_data.get('fkauthor', '')
+        fkwhere = self.cleaned_data.get('fkwhere', '')
+        print('1111',fkauthor,fkwhere)
+
+
+        if len(fkwhere) > 10:
+            raise forms.ValidationError('地址名不可超过10个字符')
+
+        if not fkwhere:
+            raise forms.ValidationError('地址不可为空')
+        
+        return self.cleaned_data
+        # 把整个clean_data还回去
+
+
+    # 二次验证函数的名字是固定写法，以clean_开头，后面跟上字段的变量名
+    def clean_fkauthor(self):
+        fkauthor = self.cleaned_data.get('fkauthor', '')
+        if not fkauthor:
+            raise forms.ValidationError('用户名不可为空')
+
+        return fkauthor
+        # 最后要把数据return回去
 
 
 
