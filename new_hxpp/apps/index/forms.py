@@ -30,9 +30,9 @@ class FkAuth(forms.Form):
     )
 
     # fields.CharField(error_messages={'required': '不能为空', 'invalid': '格式错误'})　 #自定义错误信息
-    # fkemail = fields.EmailField(
-    #     label='邮箱',
-    # )
+    fkemail = fields.EmailField(
+        label='邮箱',
+    )
 
     fkmotif = fields.CharField(
         label='标题',
@@ -47,15 +47,13 @@ class FkAuth(forms.Form):
     def clean(self):
         fkauthor = self.cleaned_data.get('fkauthor', '')
         fkwhere = self.cleaned_data.get('fkwhere', '')
-        print('1111',fkauthor,fkwhere)
-
 
         if len(fkwhere) > 10:
             raise forms.ValidationError('地址名不可超过10个字符')
 
         if not fkwhere:
             raise forms.ValidationError('地址不可为空')
-        
+
         return self.cleaned_data
         # 把整个clean_data还回去
 

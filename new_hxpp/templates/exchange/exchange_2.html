@@ -51,48 +51,55 @@
 {% block right_form %}
         <div class="tab">
 		<div class="tabt"><h2>发表留言</h2><span>带 <em>*</em> 为必填项</span></div>
-				<form id="whir_17" action="{% url 'exchangeform' %}" method="POST">
+				<form id="whir_17" action="{% url 'register' %}" method="POST">
                     {% csrf_token %}
 		            <table class="" cellspacing="0" cellpadding="0" width="90%" align="center" border="0">
                         <tbody>
                             <tr>
                                 <td height="39" align="right">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;姓名：&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;{{ form.fkauthor.label }}：&nbsp;
                                 </td>
                                 <td>
-                                    <input id="" class="input_ly" maxlength="512" name="fkauthor"> <span class="f_red">*</span><span errmsg="姓名验证不通过" regexp="" requiredmsg="姓名为必填" required="True" ></span>
+                                    {{ form.fkauthor }}
+                                    <span class="f_red">*</span>
+                                    <span errmsg="姓名验证不通过" regexp="" requiredmsg="姓名为必填" required="True" ></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td height="39" align="right">
-                                    来自哪里:&nbsp;
+                                    {{ form.fkwhere.label }}&nbsp;
                                 </td>
                                 <td>
-                                    <input id="" class="input_ly" maxlength="250" name="fkwhere"> <span errmsg="来自哪里验证不通过" regexp="" requiredmsg="来自哪里为必填" required="False" ></span>
+                                    {{ form.fkwhere }}
+                                    <span errmsg="来自哪里验证不通过" regexp="" requiredmsg="来自哪里为必填" required="False" ></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td height="39" align="right">
-                                    &nbsp;&nbsp;E_mail：&nbsp;
+                                    &nbsp;&nbsp;{{ form.fkemail.label }}&nbsp;
                                 </td>
                                 <td>
-                                    <input id="" class="input_ly" maxlength="250" name="fkemail"> <span errmsg="电子邮箱验证不通过" regexp="^\w+([-+.]\w+)*@\w+([-.]\\w+)*\.\w+([-.]\w+)*$" requiredmsg="电子邮箱为必填" required="False" validatorfor="17864" name="whirValidator"></span>
+                                    {{ form.fkemail}}
+                                    <span errmsg="电子邮箱验证不通过" regexp="^\w+([-+.]\w+)*@\w+([-.]\\w+)*\.\w+([-.]\w+)*$" requiredmsg="电子邮箱为必填" required="False" validatorfor="17864" name="whirValidator"></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td height="39" align="right">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;主题：&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;{{ form.fkmotif.label }}&nbsp;
                                 </td>
                                 <td>
-                                    <input id="17866" class="input_ly" maxlength="250" name="fkmotif"> <span class="f_red">*</span><span errmsg="主题验证不通过" regexp="" requiredmsg="主题为必填" required="True" validatorfor="17866" name="whirValidator"></span>
+                                    {{ form.fkmotif }}
+                                    <span class="f_red">*</span><span errmsg="主题验证不通过" regexp="" requiredmsg="主题为必填" required="True" validatorfor="17866" name="whirValidator"></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td height="39" align="right">
-                                    留言内容：
+                                    {{ form.fkdetails.label}}
                                 </td>
                                 <td>
-                                    <textarea onkeyup="LimitMaxLength(this)" onblur="LimitMaxLength(this)" id="17867" class="input_ly" style="border-top:#d7d7d7 1px solid;height:199px;border-right:#d7d7d7 1px solid;border-bottom:#d7d7d7 1px solid;border-left:#d7d7d7 1px solid;width:404px;" maxlength="1024" name="fkdetails" onpropertychange="LimitMaxLength(this)"></textarea> <span errmsg="留言内容验证不通过" regexp="" requiredmsg="留言内容为必填" required="True" validatorfor="17867" name="whirValidator"></span>
+
+                                    <textarea form= "whir_17" onkeyup="LimitMaxLength(this)" onblur="LimitMaxLength(this)" id="17867" class="input_ly" style="border-top:#d7d7d7 1px solid;height:199px;border-right:#d7d7d7 1px solid;border-bottom:#d7d7d7 1px solid;border-left:#d7d7d7 1px solid;width:404px;" maxlength="1024" name="fkdetails" onpropertychange="LimitMaxLength(this)"></textarea>
+                                    <span errmsg="留言内容验证不通过" regexp="" requiredmsg="留言内容为必填" required="True" validatorfor="17867" name="whirValidator"></span>
                                 </td>
                             </tr>
                             <tr>
@@ -113,7 +120,7 @@
                         </tbody>
                     </table>
 	            </form>
-	<script type="text/javascript">
+                <script type="text/javascript">
 		//限制textArea的长度
 		function LimitMaxLength(obj){
 			 var leng= obj.value.length;
