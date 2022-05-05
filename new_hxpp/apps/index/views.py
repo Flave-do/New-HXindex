@@ -142,15 +142,17 @@ class ExchangeForm(View):
         pass
 
     def post(self,request):
-        datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
-        fkauthor = request.POST.get('fkauthor', '')
-        fkmotif = request.POST.get('fkmotif','')
-        fkwhere = request.POST.get('fkwhere','')
-        fkdetails = request.POST.get('fkdetails','')
-        fkemail = request.POST.get('fkemail','')
-        print(datatime,fkauthor,fkmotif,fkwhere,fkdetails,fkemail)
+        form = FkAuth(request.POST)
 
-        if (fkauthor and datatime and fkmotif and fkemail and fkwhere and fkdetails):
+        if form.is_valid():
+            datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
+            fkauthor = form.cleaned_data.get('fkauthor', '')
+            fkwhere = form.cleaned_data.get('fkwhere', '')
+            fkemail = form.cleaned_data.get('fkemail', '')
+            fkmotif = form.cleaned_data.get('fkmotif', '')
+            fkdetails = form.cleaned_data.get('fkdetails', '')
+            print(datatime,fkauthor,fkmotif,fkwhere,fkdetails,fkemail)
+
             # 有则取无则建get_or_create会返回一个tuple,第一个值是查到或者创建的数据，第二个值是一个布尔
             user = UserProfile.objects.get_or_create(username=fkauthor)[0]
             user_formfile = FormTexi()
@@ -162,6 +164,8 @@ class ExchangeForm(View):
             user_formfile.fkdetails = fkdetails
             user_formfile.save()
 
+        else:
+            pass
         items = FormTexi.objects.all()
 
         return render(request, "exchange/exchange_2.html", {"items": items})
@@ -274,15 +278,11 @@ class Register(View):
         if form.is_valid():
             fkauthor = form.cleaned_data.get('fkauthor','')
             fkwhere = form.cleaned_data.get('fkwhere','')
-<<<<<<< HEAD
             fkemail = form.cleaned_data.get('fkemail','')
             fkmotif = form.cleaned_data.get('fkmotif','')
             fkdetails = form.cleaned_data.get('fkdetails','')
 
             return HttpResponse("fkauthor is {},fkwhere is {},fkemail is {},fkmotif is {},fkdetails is {}".format(fkauthor,fkwhere,fkemail,fkmotif,fkdetails))
-=======
 
-            return HttpResponse("fkauthor is {},fkwhere is {}".format(fkauthor,fkwhere))
->>>>>>> 9990b24089249a10147c66fe15f0b2515cfe3bff
         else:
             return render(request,'temp3.html',{'form':form})
