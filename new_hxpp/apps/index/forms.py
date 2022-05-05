@@ -26,7 +26,7 @@ class FkAuth(forms.Form):
 
     fkwhere = fields.CharField(
         max_length=20,
-        label='来自哪',
+        label='来自',
     )
 
     # fields.CharField(error_messages={'required': '不能为空', 'invalid': '格式错误'})　 #自定义错误信息
