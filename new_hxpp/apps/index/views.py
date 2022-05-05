@@ -127,8 +127,8 @@ class Exchange(View):
         pk = int(pk)
         if pk ==2:
             items = FormTexi.objects.all()
-
-            return render(request,"exchange/exchange_2.html",{"items":items})
+            form = FkAuth()
+            return render(request,"exchange/exchange_2.html",{"items":items,'form':form})
 
         else:
             return render(request,"exchange/exchange_{}.html".format(pk))
@@ -139,7 +139,9 @@ class Exchange(View):
 
 class ExchangeForm(View):
     def get(self,request):
-        pass
+        items = FormTexi.objects.all()
+        form = FkAuth()
+        return render(request, "exchange/exchange_2.html", {"items":items,'form': form})
 
     def post(self,request):
         form = FkAuth(request.POST)
@@ -168,7 +170,7 @@ class ExchangeForm(View):
             pass
         items = FormTexi.objects.all()
 
-        return render(request, "exchange/exchange_2.html", {"items": items})
+        return render(request, "exchange/exchange_2.html", {"items": items,'form': form})
 
 
 class Ability(View):
