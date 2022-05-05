@@ -5,7 +5,16 @@
     <title>form</title>
 </head>
 <body>
+<<<<<<< HEAD
 
+=======
+<form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+{#    {{ form.fkwhere.label }}{{ form.fkwhere }}#}
+{#    {{ form.fkauthor.label }}{{ form.fkauthor }}#}
+    {{ form }}
+    <input type="submit" value="注册">
+>>>>>>> 9990b24089249a10147c66fe15f0b2515cfe3bff
 
 <div class="tab">
 		<div class="tabt"><h2>发表留言</h2><span>带 <em>*</em> 为必填项</span></div>
@@ -56,7 +65,11 @@
                                 </td>
                                 <td>
 
+<<<<<<< HEAD
                                     <textarea form= "whir_17" onkeyup="LimitMaxLength(this)" onblur="LimitMaxLength(this)" id="17867" class="input_ly" style="border-top:#d7d7d7 1px solid;height:199px;border-right:#d7d7d7 1px solid;border-bottom:#d7d7d7 1px solid;border-left:#d7d7d7 1px solid;width:404px;" maxlength="1024" name="fkdetails" onpropertychange="LimitMaxLength(this)"></textarea>
+=======
+                                    <textarea onkeyup="LimitMaxLength(this)" onblur="LimitMaxLength(this)" id="17867" class="input_ly" style="border-top:#d7d7d7 1px solid;height:199px;border-right:#d7d7d7 1px solid;border-bottom:#d7d7d7 1px solid;border-left:#d7d7d7 1px solid;width:404px;" maxlength="1024" name="fkdetails" onpropertychange="LimitMaxLength(this)"></textarea>
+>>>>>>> 9990b24089249a10147c66fe15f0b2515cfe3bff
                                     <span errmsg="留言内容验证不通过" regexp="" requiredmsg="留言内容为必填" required="True" validatorfor="17867" name="whirValidator"></span>
                                 </td>
                             </tr>
@@ -78,7 +91,11 @@
                         </tbody>
                     </table>
 	            </form>
+<<<<<<< HEAD
                 <script type="text/javascript">
+=======
+	<script type="text/javascript">
+>>>>>>> 9990b24089249a10147c66fe15f0b2515cfe3bff
 		//限制textArea的长度
 		function LimitMaxLength(obj){
 			 var leng= obj.value.length;

@@ -274,10 +274,15 @@ class Register(View):
         if form.is_valid():
             fkauthor = form.cleaned_data.get('fkauthor','')
             fkwhere = form.cleaned_data.get('fkwhere','')
+<<<<<<< HEAD
             fkemail = form.cleaned_data.get('fkemail','')
             fkmotif = form.cleaned_data.get('fkmotif','')
             fkdetails = form.cleaned_data.get('fkdetails','')
 
             return HttpResponse("fkauthor is {},fkwhere is {},fkemail is {},fkmotif is {},fkdetails is {}".format(fkauthor,fkwhere,fkemail,fkmotif,fkdetails))
+=======
+
+            return HttpResponse("fkauthor is {},fkwhere is {}".format(fkauthor,fkwhere))
+>>>>>>> 9990b24089249a10147c66fe15f0b2515cfe3bff
         else:
             return render(request,'temp3.html',{'form':form})
