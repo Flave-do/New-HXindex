@@ -147,23 +147,16 @@ class ExchangeForm(View):
         form = FkAuth(request.POST)
 
         if form.is_valid():
-            datatime = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
-            fkauthor = form.cleaned_data.get('fkauthor', '')
-            fkwhere = form.cleaned_data.get('fkwhere', '')
-            fkemail = form.cleaned_data.get('fkemail', '')
-            fkmotif = form.cleaned_data.get('fkmotif', '')
-            fkdetails = form.cleaned_data.get('fkdetails', '')
-            print(datatime,fkauthor,fkmotif,fkwhere,fkdetails,fkemail)
-
             # 有则取无则建get_or_create会返回一个tuple,第一个值是查到或者创建的数据，第二个值是一个布尔
+            fkauthor = form.cleaned_data.get('fkauthor', '')
             user = UserProfile.objects.get_or_create(username=fkauthor)[0]
             user_formfile = FormTexi()
-            user_formfile.datatimes = datatime
+            user_formfile.datatimes = timezone.now().strftime("%Y-%m-%d %H:%M:%S")
             user_formfile.fkauthor = user
-            user_formfile.fkwhere = fkwhere
-            user_formfile.fkemail = fkemail
-            user_formfile.fkmotif = fkmotif
-            user_formfile.fkdetails = fkdetails
+            user_formfile.fkwhere = form.cleaned_data.get('fkwhere', '')
+            user_formfile.fkemail = form.cleaned_data.get('fkemail', '')
+            user_formfile.fkmotif = form.cleaned_data.get('fkmotif', '')
+            user_formfile.fkdetails = form.cleaned_data.get('fkdetails', '')
             user_formfile.save()
 
         else:

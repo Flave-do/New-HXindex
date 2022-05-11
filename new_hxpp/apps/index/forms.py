@@ -21,32 +21,42 @@ class FkAuth(forms.Form):
     # fields.CharField(required=False)　　#表单可以为空
     fkauthor = fields.CharField(
         max_length=10,
+        required=False,
         label='作者',
     )
 
     fkwhere = fields.CharField(
         max_length=20,
+        required=False,
         label='来自',
     )
 
     # fields.CharField(error_messages={'required': '不能为空', 'invalid': '格式错误'})　 #自定义错误信息
     fkemail = fields.EmailField(
+        required=False,
         label='邮箱',
     )
 
     fkmotif = fields.CharField(
+        required=False,
         label='标题',
     )
 
     fkdetails = fields.CharField(
+        required=False,
         label='内容',
 
     )
 
 
     def clean(self):
+        print('有验证')
         fkauthor = self.cleaned_data.get('fkauthor', '')
         fkwhere = self.cleaned_data.get('fkwhere', '')
+
+        if not fkauthor:
+            raise forms.ValidationError('用户名不可为空')
+
 
         if len(fkwhere) > 10:
             raise forms.ValidationError('地址名不可超过10个字符')
@@ -60,8 +70,10 @@ class FkAuth(forms.Form):
 
     # 二次验证函数的名字是固定写法，以clean_开头，后面跟上字段的变量名
     def clean_fkauthor(self):
+        print('有局部验证')
         fkauthor = self.cleaned_data.get('fkauthor', '')
         if not fkauthor:
+            print('有局部局部验证')
             raise forms.ValidationError('用户名不可为空')
 
         return fkauthor
